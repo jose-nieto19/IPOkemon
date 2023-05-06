@@ -1,0 +1,18 @@
+﻿<Page
+    x:Class="MiPokemon.CombatePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiPokemon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <TextBox HorizontalAlignment="Left" Height="126" Margin="10,57,0,0" TextWrapping="Wrap" Text="Combate Pokemon" VerticalAlignment="Top" Width="761" FontSize="50" FontWeight="Bold"/>
+        <RelativePanel Background="White" Margin="0,275,0,0">
+            <RatingControl x:Name="rcStars" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="32" RelativePanel.AlignVerticalCenterWithPanel="True"/>
+            <TextBox x:Name="tbPokemon" HorizontalAlignment="Left" Height="51" Text="Pikachu" TextWrapping="Wrap" VerticalAlignment="Center" Background="{x:Null}" FontSize="30" RelativePanel.AlignVerticalCenterWith="rcStars" RelativePanel.RightOf="rcStars"/>
+        </RelativePanel>
+    </Grid>
+</Page>
