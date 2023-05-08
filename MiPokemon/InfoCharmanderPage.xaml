@@ -5,14 +5,14 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Custom="using:Proyecto1_Charmander"
-    x:Class="MiPokemon.PokedexPage"
+    x:Class="MiPokemon.InfoCharmanderPage"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <Image x:Name="img_fondo_pokedex" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/pokedex_fondo.jpg"/>
+        <Image x:Name="fondo_charmander" Source="Assets/Infocharmander.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" Stretch="Fill" Opacity="0.7"/>
 
-        <Custom:Pokemon_Charmander HorizontalAlignment="Left" Margin="254,170,0,0" VerticalAlignment="Top" Height="315" Width="330" Fondo="False" BarraEnergia="False" BarraVida="False" MostrarBotones="False"/>
+        <Custom:Pokemon_Charmander Margin="35,70,925,550" Fondo="False" BarraEnergia="False" BarraVida="False" Nombre="False" MostrarBotones="False"/>
 
     </Grid>
 </Page>
