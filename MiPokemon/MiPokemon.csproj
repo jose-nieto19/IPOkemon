@@ -146,11 +146,13 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BolaFuego.png" />
+    <Content Include="Assets\btn_informacion.png" />
     <Content Include="Assets\energy.jpg" />
     <Content Include="Assets\fondo.jpg" />
     <Content Include="Assets\FondoPokemon.jpg" />
     <Content Include="Assets\health.png" />
     <Content Include="Assets\imEnergia.png" />
+    <Content Include="Assets\InfoCharmander.jpg" />
     <Content Include="Assets\pokedex_fondo.jpg" />
     <Content Include="Assets\P_Energia.png" />
     <Content Include="Assets\P_Vida.png" />
@@ -172,6 +174,10 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Page Include="CombatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InfoCharmanderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

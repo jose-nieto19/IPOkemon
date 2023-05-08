@@ -32,5 +32,11 @@ namespace MiPokemon
             Frame aux = (Frame)this.Parent;
             aux.Navigate(typeof(InfoGolbatPage));
         }
+
+        private void buttonInfoCharmander_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(InfoCharmanderPage));
+            
+        }
     }
 }

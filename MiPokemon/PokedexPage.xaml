@@ -13,6 +13,13 @@
         <Image x:Name="img_fondo_pokedex" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/pokedex_fondo.jpg"/>
 
         <Custom:Pokemon_Charmander HorizontalAlignment="Left" Margin="254,170,0,0" VerticalAlignment="Top" Height="315" Width="330" Fondo="False" BarraEnergia="False" BarraVida="False" MostrarBotones="False"/>
-
+        <Button x:Name="buttonInfoCharmander" Content="" Margin="572,379,0,0" VerticalAlignment="Top" Height="66" Width="81" RenderTransformOrigin="2.682,4.236" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="buttonInfoCharmander_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="2.408" TranslateX="-7.485" TranslateY="4.887"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="Assets/btn_informacion.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Page>
