@@ -132,8 +132,8 @@
       <DependentUpon>PokedexPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ucGolbat.xaml.cs">
-      <DependentUpon>ucGolbat.xaml</DependentUpon>
+    <Compile Include="ucPorygon2.xaml.cs">
+      <DependentUpon>ucPorygon2.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -177,9 +177,9 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ucGolbat.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="ucPorygon2.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
   <ItemGroup>

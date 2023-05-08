@@ -1,0 +1,396 @@
+﻿<UserControl
+    x:Class="porygon2UC.ucPorygon2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:porygon2UC"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    d:DesignHeight="300"
+    d:DesignWidth="450">
+
+    <UserControl.Resources>
+        <Storyboard x:Name="sbGuinarOjo" AutoReverse="True">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="ellipse" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.4000000" Value="Collapsed"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimation Duration="00:00:00.4000000" Storyboard.TargetName="ellipse1" To="0.087" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"/>
+            <DoubleAnimation Duration="00:00:00.4000000" Storyboard.TargetName="ellipse1" To="-0.318" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)"/>
+            <DoubleAnimation Duration="00:00:00.4000000" Storyboard.TargetName="ellipse1" To="-6.184" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"/>
+        </Storyboard>
+        <Storyboard x:Name="sbPsicoataque">
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="cvPsicoataque" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00" Value="Visible"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.8000000" Value="Collapsed"/>
+            </ObjectAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvPsicoataque" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="43.5"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="cvPsicoataque" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.8000000" Value="51.75"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="ellipse8" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1.324"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="28.626"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.6000000" Value="9.496"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbCansado" AutoReverse="True">
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="ellipse1" To="0.157" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.ScaleY)"/>
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="ellipse1" To="-0.278" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)"/>
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="ellipse1" To="-5.732" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"/>
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="ellipse2" To="35.916" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="ellipse9" To="35.916" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="path" To="-30.104" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="ellipse8" To="18.584" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
+            <DoubleAnimation Duration="00:00:00.5000000" Storyboard.TargetName="ellipse10" To="18.584" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)"/>
+        </Storyboard>
+        <Storyboard x:Name="sbRecibirAtaque" AutoReverse="True">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateX)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-25"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-57"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-13"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="2"/>
+            </DoubleAnimationUsingKeyFrames>
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.Rotation)">
+                <EasingDoubleKeyFrame KeyTime="00:00:00.2000000" Value="-17.612"/>
+                <EasingDoubleKeyFrame KeyTime="00:00:00.4000000" Value="-29.389"/>
+            </DoubleAnimationUsingKeyFrames>
+            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="canvas" Storyboard.TargetProperty="(UIElement.Visibility)">
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.1000000" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.2000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.3000000" Value="Collapsed"/>
+                <DiscreteObjectKeyFrame KeyTime="00:00:00.4000000">
+                    <DiscreteObjectKeyFrame.Value>
+                        <Visibility>Visible</Visibility>
+                    </DiscreteObjectKeyFrame.Value>
+                </DiscreteObjectKeyFrame>
+            </ObjectAnimationUsingKeyFrames>
+        </Storyboard>
+        <Storyboard x:Name="sbFlotar" AutoReverse="True" RepeatBehavior="Forever">
+            <DoubleAnimation Duration="00:00:00.8000000" Storyboard.TargetName="vbPorygon" To="-20" Storyboard.TargetProperty="(UIElement.RenderTransform).(CompositeTransform.TranslateY)"/>
+        </Storyboard>
+    </UserControl.Resources>
+    
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="20*"/>
+            <RowDefinition Height="140*"/>
+            <RowDefinition Height="20*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="25*"/>
+            <ColumnDefinition Width="260*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/fondo.jpg" Stretch="Fill"/>
+
+        <ProgressBar x:Name="pbHealth" Grid.Column="1" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="10,10,10,10" Background="#7FFF0000" Foreground="Red" Value="100"/>
+        <ProgressBar x:Name="pbEnergy" Grid.Column="1" HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch" Margin="10,10,10,10" Value="100" Foreground="#FFD7C500" Background="#7FDBE800"/>
+        <TextBlock x:Name="tbName" Grid.Column="1" HorizontalAlignment="Center" Grid.Row="3" TextWrapping="Wrap" VerticalAlignment="Center" TextAlignment="Center" FontSize="25" FontWeight="Bold" Text="PORYGON2" Foreground="White"/>
+        <Image x:Name="imRPotion" Grid.Column="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,5,5,5" Source="/Assets/potionRed.png" PointerReleased="usePotionRed"/>
+        <Image x:Name="imYPotion" Grid.Column="2" HorizontalAlignment="Stretch"  Grid.Row="1" VerticalAlignment="Stretch" Margin="5,5,5,5" Source="/Assets/potionYellow.png" PointerReleased="usePotionYellow"/>
+        <Image x:Name="imHealth" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Margin="5,5,5,5" Source="/Assets/health.png"/>
+        <Image x:Name="imEnergy" HorizontalAlignment="Stretch" Grid.Row="1" VerticalAlignment="Stretch" Margin="5,5,5,0" Source="/Assets/energy.png"/>
+        <Viewbox x:Name="vbPorygon" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Width="200" Height="200" Grid.Row="2" Grid.Column="1" Stretch="Fill" RenderTransformOrigin="0.5,0.5">
+            <Viewbox.RenderTransform>
+                <CompositeTransform/>
+            </Viewbox.RenderTransform>
+            <Canvas x:Name="cvPorygon" RenderTransformOrigin="0.5,0.5" Height="300" Width="300" VerticalAlignment="Bottom" HorizontalAlignment="Center">
+                <Canvas.RenderTransform>
+                    <CompositeTransform/>
+                </Canvas.RenderTransform>
+                <Canvas x:Name="canvas" Height="163" Canvas.Left="58" Canvas.Top="88.5930023193359" Width="171" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <CompositeTransform/>
+                    </Canvas.RenderTransform>
+                    <Path x:Name="path" Stroke="Black" UseLayoutRounding="False" d:LayoutRounding="Auto" Data="M10.366832,0.50021362 C10.504161,0.49868774 10.641507,0.50531769 10.778764,0.520298 C15.170966,0.99961472 17.808713,9.8445606 16.670338,20.276041 C15.85213,27.773668 13.305869,34.050225 10.30746,36.809741 L10.254539,36.856939 L10.254539,54.682205 L5.2545388,54.682205 L5.2545388,37.831825 L5.0954539,37.737387 C1.6637039,35.580686 -0.2313118,27.66783 0.76476669,18.540285 C1.867568,8.4347878 6.1096143,0.54752731 10.366832,0.50021362 z" Height="84" Canvas.Left="21.561" RenderTransformOrigin="0.444765837715254,0.800660376654156" Stretch="Fill" Canvas.Top="6.197" Width="22" Fill="#FF00D0C2">
+                        <Path.RenderTransform>
+                            <CompositeTransform Rotation="-25.519"/>
+                        </Path.RenderTransform>
+
+                    </Path>
+                    <Ellipse x:Name="ellipse9" Height="35" Canvas.Left="85.43" Stroke="Black" Canvas.Top="81.993" Width="80" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FF00D0C2">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="30"/>
+                        </Ellipse.RenderTransform>
+
+                    </Ellipse>
+                    <Ellipse Height="65" Canvas.Left="23" Stroke="Black" Canvas.Top="69" Width="120" RenderTransformOrigin="0.5,0.5" Fill="#FFF94A4A"/>
+                    <Path Data="M0.5,0.5 L14.5,0.5 14.5,0.51700979 14.43543,0.52927697 C12.057766,1.1318972 10.167,10.961918 10.167,23 10.167,35.038082 12.057766,44.868103 14.43543,45.470722 L14.5,45.48299 14.5,45.5 0.5,45.5 0.5,45.361031 0.57313514,45.319229 C2.7877843,43.91164 4.4999999,34.455593 4.4999999,23 4.4999999,11.544406 2.7877843,2.0883594 0.57313514,0.68077147 L0.5,0.63897061 z" Height="46" Canvas.Left="100" Stroke="Black" Stretch="Fill" Canvas.Top="38.407" Width="15" Fill="#FFF94A4A" UseLayoutRounding="False"/>
+                    <Path Canvas.Left="86.028" Stroke="Black" Data="M13.168538,0.5 L13.411923,0.7426548 C19.454897,6.9188948 24.511122,18.1593 26.51928,31.470617 28.125805,42.119669 27.477388,52.077818 25.130341,59.569368 L24.949398,60.128328 24.687773,60.115854 C16.635562,59.603647 15.940005,50.12557 10.879172,45.020042 6.6567332,40.760312 0.50000001,35.046296 0.5,28.157495 0.50000002,21.872593 4.8813409,16.21518 7.375453,11.270478 9.4839051,7.0903681 9.9013608,4.4527898 12.777323,0.79024267 z" Height="62" RenderTransformOrigin="0.931743722921224,0.464428036816021" Stretch="Fill" Canvas.Top="100.706" Width="28" Fill="#FF00D0C2" PointerReleased="hacerCosquillas" UseLayoutRounding="False">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="82.346"/>
+                                <TranslateTransform X="0" Y="0"/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Ellipse x:Name="ellipse2" Height="35" Canvas.Left="5.93" Stroke="Black" Canvas.Top="97.743" Width="80" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="#FF00D0C2">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="30"/>
+                        </Ellipse.RenderTransform>
+
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse10" Height="52" Canvas.Left="81.715" Stroke="Black" Width="78" RenderTransformOrigin="0.5,0.5" Fill="#FFF94A4A" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="15"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse8" Height="24" Canvas.Left="115" Stroke="Black" Canvas.Top="27.094" Width="56" RenderTransformOrigin="0.081,0.464" Fill="#FF00D0C2" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="9.418" TranslateX="0.457" TranslateY="-3.827"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="28" Canvas.Left="94.25" Stroke="Black" Canvas.Top="11.26" Width="18" Fill="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-5.086"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse1" Height="13" Canvas.Left="103.25" Stroke="Black" Canvas.Top="21.24" Width="6" Fill="Black" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="-5.086" TranslateX="0.208" TranslateY="-0.275"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse" Height="6" Canvas.Left="105.5" Stroke="White" Canvas.Top="24.74" Width="3" Fill="White" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-5.086"/>
+                                <TranslateTransform X="0.205" Y="-0.342"/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="18" Canvas.Left="75.636" Canvas.Top="92.749" Width="10" RenderTransformOrigin="0.5,0.5" Fill="#3FFFFFFF" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="47.603"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="24" Width="44" Fill="#3FFFFFFF" Canvas.Left="89" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Ellipse Height="5" Width="7" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="98" Canvas.Top="3.387" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-26.731"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="3" Width="3" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="99.583" Canvas.Top="5.304" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-26.731"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="9" Width="22" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="117" Canvas.Top="32.137" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="28.396"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="9" Width="22" Fill="#3FFFFFFF" Canvas.Left="144" Canvas.Top="39" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                    <Ellipse Height="2" Width="4" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="146.156" Canvas.Top="44.356" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.955" ScaleY="1.048"/>
+                                <SkewTransform AngleX="13.193"/>
+                                <RotateTransform Angle="16.413"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="1" Width="2" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="147.062" Canvas.Top="44.356" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.955" ScaleY="1.048"/>
+                                <SkewTransform AngleX="13.193"/>
+                                <RotateTransform Angle="16.413"/>
+                                <TranslateTransform X="0.301" Y="0.101"/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="10" Width="22" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Top="20.304" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.98" ScaleY="1.02"/>
+                                <SkewTransform AngleX="5.963"/>
+                                <RotateTransform Angle="64.484"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="4" Width="6" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="1.25" Canvas.Top="16.304" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.92" ScaleY="1.087"/>
+                                <SkewTransform AngleX="9.409"/>
+                                <RotateTransform Angle="53.965"/>
+                                <TranslateTransform X="3.544" Y="0.437"/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="3" Width="4" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="2.333" Canvas.Top="16.304" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform ScaleX="0.92" ScaleY="1.087"/>
+                                <SkewTransform AngleX="9.409"/>
+                                <RotateTransform Angle="53.965"/>
+                                <TranslateTransform X="3.544" Y="0.437"/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse3" Height="10" Width="22" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="13.125" Canvas.Top="94.512" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="-20.485" SkewX="5.963" ScaleX="0.98" ScaleY="1.02"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse4" Height="4" Width="6" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="20.125" Canvas.Top="93.512" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="-31.004" SkewX="9.409" ScaleX="0.92" ScaleY="1.087" TranslateX="-1.414" TranslateY="2.149"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse5" Height="9" Width="14" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="50.083" Canvas.Top="107.304" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="41.737"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse6" Height="2" Width="3" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="56.042" Canvas.Top="111.304" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="-26.707" SkewY="-0.048" ScaleX="1" ScaleY="0.999"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse x:Name="ellipse7" Height="1" Width="1" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="56.958" Canvas.Top="111.387" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <CompositeTransform Rotation="-26.707" SkewY="-0.048" ScaleX="-1" ScaleY="0.999"/>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Path Fill="#3FFFFFFF" Data="M18.5,0 C27.280464,0 34.632225,9.7541475 36.526272,22.837805 L36.599438,23.373741 36.143395,23.548332 C31.33495,25.428352 26.230795,28.245277 21.277634,31.909889 13.965824,37.319553 8.3242056,43.584187 5.0475452,49.413616 L4.9525511,49.586231 4.8059642,49.335133 C1.8199365,44.096313 2.1350843E-07,37.137062 0,29.5 2.1350843E-07,13.2076 8.2827322,0 18.5,0 z" Height="50" RenderTransformOrigin="0.505472249337311,0.594923212900827" Stretch="Fill" Width="37" Canvas.Left="32.875" Canvas.Top="65.012" UseLayoutRounding="False">
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="64.264"/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Ellipse Height="5" Width="7" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="40" Canvas.Top="78.387" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-42.461"/>
+                                <TranslateTransform X="-1.481" Y="2.277"/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Ellipse Height="3" Width="3" Fill="#3FFFFFFF" RenderTransformOrigin="0.5,0.5" Canvas.Left="41" Canvas.Top="79.512" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                        <Ellipse.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform Angle="-42.461"/>
+                                <TranslateTransform X="-1.173" Y="2.511"/>
+                            </TransformGroup>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                    <Image x:Name="imgTiritaCabeza" Height="10" Width="10" Source="/Assets/tirita.png" Canvas.Left="125" Canvas.Top="7" Visibility="Collapsed"/>
+                    <Canvas x:Name="cvTiritasPecho" Canvas.Left="116" Canvas.Top="92" Visibility="Collapsed">
+                        <Image Height="10" Width="10" Source="/Assets/tirita.png"/>
+                        <Image Height="10" Width="10" Source="/Assets/tirita.png" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto">
+                            <Image.RenderTransform>
+                                <CompositeTransform Rotation="93.008"/>
+                            </Image.RenderTransform>
+                        </Image>
+                    </Canvas>
+                    <Canvas x:Name="cvVendaCola" Height="8" Canvas.Left="25.507999420166" Canvas.Top="66.8379974365234" Width="10" Visibility="Collapsed">
+                        <Rectangle Height="3" Stroke="Black" Width="7" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="White">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform Rotation="-25.699"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Rectangle Height="3" Canvas.Left="1.25" Stroke="Black" Canvas.Top="2.375" Width="7" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="White">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform Rotation="-25.699"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Rectangle Height="3" Canvas.Left="2.5" Stroke="Black" Canvas.Top="5" Width="7" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="White">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform Rotation="-25.699"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                    </Canvas>
+                    <Canvas x:Name="cvVendaCuello" Height="6" Canvas.Left="103.758003234863" Canvas.Top="57.5880012512207" Visibility="Collapsed">
+                        <Rectangle Height="3" Stroke="Black" Width="7" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="White">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform Rotation="0.734"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Rectangle Height="3" Stroke="Black" Canvas.Top="2.75" Width="7" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="White">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform Rotation="0.734"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                    </Canvas>
+                    <Canvas x:Name="cvMuerto" Canvas.Left="93.6419982910156" Canvas.Top="23.2800006866455" Visibility="Collapsed">
+                        <Rectangle Height="3" Stroke="Black" Width="19" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="Black">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform Rotation="58.911"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                        <Rectangle Height="3" Stroke="Black" Width="19" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" Fill="Black">
+                            <Rectangle.RenderTransform>
+                                <CompositeTransform Rotation="112.179"/>
+                            </Rectangle.RenderTransform>
+                        </Rectangle>
+                    </Canvas>
+                    <Path x:Name="sudor" Data="M9.6579731,0.5 L19.086102,11.921796 L19.075883,12.01918 C18.28197,19.036928 14.39711,24.363931 9.724263,24.363931 C5.2973554,24.363931 1.5776708,19.58291 0.52334785,13.112665 L0.5,12.961593 z" Height="16" Canvas.Left="144" Stroke="Black" Stretch="Fill" Canvas.Top="4" UseLayoutRounding="False" Width="6" Fill="#FF0056FF" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+                </Canvas>
+                <Canvas x:Name="cvPsicoataque" HorizontalAlignment="Left" Height="55" Canvas.Left="206" Canvas.Top="118" VerticalAlignment="Top" Width="49" Visibility="Collapsed" RenderTransformOrigin="0.5,0.5">
+                    <Canvas.RenderTransform>
+                        <CompositeTransform/>
+                    </Canvas.RenderTransform>
+
+                    <Ellipse Height="43" Stroke="#FFED1CB6" Width="30" HorizontalAlignment="Left" VerticalAlignment="Top" StrokeThickness="6"/>
+
+                    <Ellipse Height="43" Stroke="#FFAB007E" Width="30" Canvas.Left="9" Canvas.Top="7" HorizontalAlignment="Left" VerticalAlignment="Top" StrokeThickness="6"/>
+                    <Ellipse Height="43" Stroke="#FFED1CB6" Width="30" Canvas.Left="19" Canvas.Top="12" StrokeThickness="6"/>
+                </Canvas>
+            </Canvas>
+        </Viewbox>
+        <Button x:Name="btnPsicoataque" Grid.Column="1" Content="PSICOATAQUE" Margin="5,0,0,0" Grid.Row="3" Background="White" FontWeight="Bold" FontSize="10" Click="psicoataque"/>
+        <Button x:Name="btnRecibirAtaque" Grid.Column="1" Content="RECIBIR ATAQUE" Margin="0,0,5,0" Grid.Row="3" Background="White" FontFamily="Segoe UI" FontSize="10" FontWeight="Bold" Click="recibirAtaque" HorizontalAlignment="Right"/>
+
+    </Grid>
+</UserControl>
