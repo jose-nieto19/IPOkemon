@@ -125,6 +125,9 @@
     <Compile Include="InfoGolbatPage.xaml.cs">
       <DependentUpon>InfoGolbatPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InitialPage.xaml.cs">
+      <DependentUpon>InitialPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -148,6 +151,7 @@
     <Content Include="Assets\BolaFuego.png" />
     <Content Include="Assets\energy.png" />
     <Content Include="Assets\fondo.jpg" />
+    <Content Include="Assets\FondoGimnasio.png" />
     <Content Include="Assets\FondoPokemon.jpg" />
     <Content Include="Assets\health.png" />
     <Content Include="Assets\imEnergia.png" />
@@ -176,6 +180,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="InfoGolbatPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InitialPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
