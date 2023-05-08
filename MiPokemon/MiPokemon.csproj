@@ -131,6 +131,9 @@
     <Compile Include="PokedexPage.xaml.cs">
       <DependentUpon>PokedexPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pokemon_Charmander.xaml.cs">
+      <DependentUpon>Pokemon_Charmander.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ucPorygon2.xaml.cs">
       <DependentUpon>ucPorygon2.xaml</DependentUpon>
@@ -142,11 +145,18 @@
     </AppxManifest>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\energy.jpg" />
+    <Content Include="Assets\BolaFuego.png" />
+    <Content Include="Assets\energy.png" />
     <Content Include="Assets\fondo.jpg" />
+    <Content Include="Assets\FondoPokemon.jpg" />
     <Content Include="Assets\health.png" />
-    <Content Include="Assets\RedPotion.jpg" />
-    <Content Include="Assets\YellowPotion.png" />
+    <Content Include="Assets\imEnergia.png" />
+    <Content Include="Assets\potionRed.png" />
+    <Content Include="Assets\potionYellow.png" />
+    <Content Include="Assets\P_Energia.png" />
+    <Content Include="Assets\P_Vida.png" />
+    <Content Include="Assets\tirita.png" />
+    <Content Include="Assets\Vida.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -176,6 +186,10 @@
     <Page Include="PokedexPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pokemon_Charmander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ucPorygon2.xaml">
       <Generator>MSBuild:Compile</Generator>

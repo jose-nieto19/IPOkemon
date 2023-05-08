@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Custom="using:porygon2UC"
+    xmlns:Custom1="using:Proyecto1_Charmander"
     x:Class="MiPokemon.MainPage"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -57,7 +58,7 @@
             <Frame x:Name="fmMain" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Stretch">
                 <Grid Margin="0,0,0,10">
                     <TextBox TextWrapping="Wrap" Text="Bienvenido a IPOkemon 2023" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Height="91" Margin="61,45,74,0"/>
-                    <Custom:ucPorygon2 HorizontalAlignment="Left" Height="310" Margin="672,220,0,0" VerticalAlignment="Top" Width="434"/>
+                    <Custom1:Pokemon_Charmander HorizontalAlignment="Left"  VerticalAlignment="Top" Margin="0,125,0,0"/>
                 </Grid>
             </Frame>
 
