@@ -35,8 +35,10 @@ namespace MiPokemon
 
         private void buttonInfoCharmander_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(InfoCharmanderPage));
-            
+            Frame.Navigate(typeof(MiPokemon.CharmanderInfo));
+            Frame aux = (Frame)this.Parent;
+            aux.Navigate(typeof(CharmanderInfo));
+
         }
     }
 }
