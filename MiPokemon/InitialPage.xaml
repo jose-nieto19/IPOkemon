@@ -12,7 +12,8 @@
 
     <Grid>
         <Image x:Name="imBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/FondoGimnasio.png" Stretch="Fill"/>
-        <TextBox TextWrapping="Wrap" Text="Bienvenido a IPOkemon 2023&#xD;&#xA;Trabajo realizado por:&#xD;&#xA;- Raúl Moya Campillos&#xD;&#xA;- José Luis Nieto García-Carpintero" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Height="180" Margin="61,45,74,0" IsReadOnly="True"/>
+        <Image x:Name="imLogo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/logo.png" Visibility="Collapsed"/>
+        <TextBox x:Name="txtInicio" x:Uid="txtInicio" TextWrapping="Wrap" Text="Bienvenido a IPOkemon 2023&#xD;&#xA;Trabajo realizado por:&#xD;&#xA;- Raúl Moya Campillos&#xD;&#xA;- José Luis Nieto García-Carpintero" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Height="180" Margin="61,45,74,0" IsReadOnly="True"/>
         <Custom1:Pokemon_Charmander x:Name="charmander" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Nombre ="False" Fondo="False" BarraEnergia="False" BarraVida="False" MostrarBotones="False" Height="356" Width="339" Margin="0,150,150,0"/>
         <Custom:ucPorygon2 x:Name="porygon" HorizontalAlignment="Left" Height="235" VerticalAlignment="Bottom" Width="219" Margin="150,0,0,100" HorizontalContentAlignment="Left"/>
     </Grid>

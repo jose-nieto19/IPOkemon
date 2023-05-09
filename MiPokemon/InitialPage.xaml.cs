@@ -43,10 +43,24 @@ namespace MiPokemon
             if (Width >= 720)
             {
                 porygon.Visibility = Visibility.Visible;
+                charmander.Visibility = Visibility.Visible;
+                imLogo.Visibility = Visibility.Collapsed;
+                txtInicio.Visibility = Visibility.Visible;
             }
             else if (Width >= 360)
             {
                 porygon.Visibility = Visibility.Collapsed;
+                charmander.Visibility = Visibility.Visible;
+                imLogo.Visibility = Visibility.Collapsed;
+                txtInicio.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                porygon.Visibility = Visibility.Collapsed;
+                charmander.Visibility = Visibility.Collapsed;
+                imLogo.Visibility = Visibility.Visible;
+                txtInicio.Visibility = Visibility.Collapsed;
+
             }
         }
     }

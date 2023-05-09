@@ -48,17 +48,28 @@ namespace MiPokemon
                 sView.DisplayMode = SplitViewDisplayMode.CompactInline;
                 sView.IsPaneOpen = true;
                 porygon.Visibility = Visibility.Visible;
+                charmander.Visibility = Visibility.Visible;
+                imLogo.Visibility = Visibility.Collapsed;
+                txtInicio.Visibility = Visibility.Visible;
             }
             else if (Width >= 360)
             {
                 sView.DisplayMode = SplitViewDisplayMode.CompactOverlay;
                 sView.IsPaneOpen = false;
                 porygon.Visibility = Visibility.Collapsed;
+                charmander.Visibility = Visibility.Visible;
+                imLogo.Visibility = Visibility.Collapsed;
+                txtInicio.Visibility = Visibility.Visible;
             }
             else
             {
                 sView.DisplayMode = SplitViewDisplayMode.Overlay;
                 sView.IsPaneOpen = false;
+                porygon.Visibility = Visibility.Collapsed;
+                charmander.Visibility = Visibility.Collapsed;
+                imLogo.Visibility = Visibility.Visible;
+                txtInicio.Visibility = Visibility.Collapsed;
+
             }
 
         }

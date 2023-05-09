@@ -46,10 +46,10 @@
                     <SymbolIcon Grid.Row="1" Margin="4,4,4,8" Symbol="Pictures"/>
                     <SymbolIcon Grid.Row="2" Margin="4,4,4,8" Symbol="People"/>
                     <SymbolIcon Grid.Row="3" Margin="4,4,4,8" Symbol="Help"/>
-                    <Button x:Name="btnInicio" Grid.Row="0" Grid.Column="1" Content="Inicio" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnInicio_Click"/>
+                    <Button x:Name="btnInicio" x:Uid="btnInicio" Grid.Row="0" Grid.Column="1" Content="Inicio" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnInicio_Click"/>
                     <Button x:Name="btnPokedex" Grid.Row="1" Grid.Column="1" Content="Pokedex" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnPokedex_Click"/>
-                    <Button x:Name="btnCombatePokemon" Grid.Row="2" Grid.Column="1" Content="Combate Pokemon" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnCombatePokemon_Click"/>
-                    <Button x:Name="btnAcercaDe" Grid.Row="3" Grid.Column="1" Content="Acerca de" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" HorizontalContentAlignment="Center"/>
+                    <Button x:Name="btnCombatePokemon" x:Uid="btnCombatePokemon" Grid.Row="2" Grid.Column="1" Content="Combate Pokemon" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnCombatePokemon_Click"/>
+                    <Button x:Name="btnAcercaDe" x:Uid="btnAcercaDe" Grid.Row="3" Grid.Column="1" Content="Acerca de" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" HorizontalContentAlignment="Center"/>
 
                 </Grid>
 
@@ -58,7 +58,8 @@
             <Frame x:Name="fmMain" Grid.Column="1" HorizontalAlignment="Stretch" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Stretch">
                 <Grid>
                     <Image x:Name="imBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/FondoGimnasio.png" Stretch="Fill"/>
-                    <TextBox TextWrapping="Wrap" Text="Bienvenido a IPOkemon 2023&#xD;&#xA;Trabajo realizado por:&#xD;&#xA;- Raúl Moya Campillos&#xD;&#xA;- José Luis Nieto García-Carpintero" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Height="180" Margin="61,45,74,0" IsReadOnly="True"/>
+                    <Image x:Name="imLogo" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Grid.RowSpan="4" Grid.ColumnSpan="3" Source="/Assets/logo.png" Visibility="Collapsed"/>
+                    <TextBox x:Name="txtInicio" x:Uid="txtInicio" TextWrapping="Wrap" Text="Bienvenido a IPOkemon 2023&#xD;&#xA;Trabajo realizado por:&#xD;&#xA;- Raúl Moya Campillos&#xD;&#xA;- José Luis Nieto García-Carpintero" VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Height="180" Margin="61,45,74,0" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" AllowFocusOnInteraction="False"/>
                     <Custom1:Pokemon_Charmander x:Name="charmander" HorizontalAlignment="Right"  VerticalAlignment="Bottom" Nombre ="False" Fondo="False" BarraEnergia="False" BarraVida="False" MostrarBotones="False" Height="356" Width="339" Margin="0,150,150,0"/>
                     <Custom:ucPorygon2 x:Name="porygon" HorizontalAlignment="Left" Height="235" VerticalAlignment="Bottom" Width="219" Margin="150,0,0,100" HorizontalContentAlignment="Left"/>
                 </Grid>

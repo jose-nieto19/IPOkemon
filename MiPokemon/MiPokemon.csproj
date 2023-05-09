@@ -155,6 +155,7 @@
     <Content Include="Assets\FondoPokemon.jpg" />
     <Content Include="Assets\health.png" />
     <Content Include="Assets\imEnergia.png" />
+    <Content Include="Assets\logo.png" />
     <Content Include="Assets\potionRed.png" />
     <Content Include="Assets\potionYellow.png" />
     <Content Include="Assets\P_Energia.png" />
@@ -208,6 +209,13 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.13</Version>
     </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PRIResource Include="Strings\es-ES\Resources.resw" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
