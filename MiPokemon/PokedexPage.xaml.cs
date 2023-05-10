@@ -25,20 +25,22 @@ namespace MiPokemon
         public PokedexPage()
         {
             this.InitializeComponent();
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame aux = (Frame)this.Parent;
-            aux.Navigate(typeof(InfoGolbatPage));
+            this.ucporygon.verBarraEnergia(false);
+            this.ucporygon.verBarraVida(false);
+            this.ucporygon.verBotones(false);
+            this.ucporygon.verFondo(false);
+            this.ucporygon.verIconos(false);
         }
 
         private void buttonInfoCharmander_Click(object sender, RoutedEventArgs e)
         {
-            Frame.Navigate(typeof(MiPokemon.CharmanderInfo));
-            Frame aux = (Frame)this.Parent;
-            aux.Navigate(typeof(CharmanderInfo));
+            Frame.Navigate(typeof(CharmanderInfo));
 
+        }
+
+        private void buttonInfoPorygon_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PorygonInfo));
         }
     }
 }

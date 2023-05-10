@@ -5,6 +5,7 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:Custom="using:Proyecto1_Charmander"
+    xmlns:Custom1="using:porygon2UC"
     x:Class="MiPokemon.PokedexPage"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
@@ -12,13 +13,26 @@
     <Grid>
         <Image x:Name="img_fondo_pokedex" Stretch="Fill" HorizontalAlignment="Center" VerticalAlignment="Center" Source="Assets/pokedex_fondo.jpg"/>
 
-        <Custom:Pokemon_Charmander HorizontalAlignment="Left" Margin="254,170,0,0" VerticalAlignment="Top" Height="315" Width="330" Fondo="False" BarraEnergia="False" BarraVida="False" MostrarBotones="False"/>
-        <Button x:Name="buttonInfoCharmander" Content="" Margin="572,379,0,0" VerticalAlignment="Top" Height="66" Width="81" RenderTransformOrigin="2.682,4.236" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="buttonInfoCharmander_Click">
+        <Custom:Pokemon_Charmander HorizontalAlignment="Left" Margin="157,161,0,0" Fondo="False" BarraEnergia="False" BarraVida="False" MostrarBotones="False" RenderTransformOrigin="0.5,0.5" UseLayoutRounding="False" d:LayoutRounding="Auto" VerticalAlignment="Top" Width="341">
+            <Custom:Pokemon_Charmander.RenderTransform>
+                <CompositeTransform Rotation="0.785"/>
+            </Custom:Pokemon_Charmander.RenderTransform>
+        </Custom:Pokemon_Charmander>
+        <Button x:Name="buttonInfoCharmander" Content="" Margin="502,399,0,0" VerticalAlignment="Top" Height="66" Width="81" RenderTransformOrigin="2.682,4.236" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="buttonInfoCharmander_Click">
             <Button.RenderTransform>
                 <CompositeTransform Rotation="2.408" TranslateX="-7.485" TranslateY="4.887"/>
             </Button.RenderTransform>
             <Button.Background>
                 <ImageBrush ImageSource="Assets/btn_informacion.png"/>
+            </Button.Background>
+        </Button>
+        <Custom1:ucPorygon2 x:Name="ucporygon" Margin="781,209,0,0" VerticalAlignment="Top" HorizontalAlignment="Left" Height="251" Width="244"/>
+        <Button x:Name="buttonInfoPorygon" Content="" Margin="1125,395,0,0" VerticalAlignment="Top" Height="76" Width="91" RenderTransformOrigin="2.682,4.236" UseLayoutRounding="False" d:LayoutRounding="Auto" Click="buttonInfoPorygon_Click">
+            <Button.RenderTransform>
+                <CompositeTransform Rotation="2.408" TranslateX="-7.485" TranslateY="4.887"/>
+            </Button.RenderTransform>
+            <Button.Background>
+                <ImageBrush ImageSource="/Assets/btn_informacion.png"/>
             </Button.Background>
         </Button>
     </Grid>
