@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="btn1jug.Content" xml:space="preserve">
+    <value>1 PLAYER</value>
+  </data>
+  <data name="btn2jug.Content" xml:space="preserve">
+    <value>2 PLAYERS</value>
+  </data>
   <data name="btnAcercaDe.Content" xml:space="preserve">
     <value>No se jaja</value>
   </data>
@@ -125,6 +131,10 @@
   </data>
   <data name="btnInicio.Content" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="txtComb.Text" xml:space="preserve">
+    <value>Pokemon Battle
+Choose the game mode</value>
   </data>
   <data name="txtInicio.Text" xml:space="preserve">
     <value>Welcome to IPOkemon 2023
