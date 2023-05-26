@@ -32,15 +32,14 @@ namespace MiPokemon
             this.ucporygon.verIconos(false);
         }
 
-        private void buttonInfoCharmander_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(CharmanderInfo));
-
-        }
-
-        private void buttonInfoPorygon_Click(object sender, RoutedEventArgs e)
+        private void ucporygon_PointerReleased(object sender, PointerRoutedEventArgs e)
         {
             Frame.Navigate(typeof(PorygonInfo));
+        }
+
+        private void Charmander_PointerReleased(object sender, PointerRoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CharmanderInfo));
         }
     }
 }

@@ -164,6 +164,7 @@
     <Content Include="Assets\FondoPokemon.jpg" />
     <Content Include="Assets\fondo_info_porygon.png" />
     <Content Include="Assets\health.png" />
+    <Content Include="Assets\icono_pokedex.png" />
     <Content Include="Assets\imEnergia.png" />
     <Content Include="Assets\InfoCharmander.jpg" />
     <Content Include="Assets\pokedex_fondo.jpg" />
