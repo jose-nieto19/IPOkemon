@@ -150,9 +150,6 @@
     <Compile Include="ucPorygon2.xaml.cs">
       <DependentUpon>ucPorygon2.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ucPorygon2.xaml.cs">
-      <DependentUpon>ucPorygon2.xaml</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
