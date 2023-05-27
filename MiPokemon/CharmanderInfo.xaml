@@ -27,5 +27,6 @@
         <TextBlock x:Name="tbTipoPokemon2" Margin="301,230,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Fuego"/>
         <TextBlock x:Name="tbEvolucionPokemon2" Margin="300,620,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Charmeleon" RenderTransformOrigin="0.476,0.442"/>
         <TextBlock x:Name="tbDescripcionPokemon2" Margin="300,540,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Pequeño lagarto de fuego" RenderTransformOrigin="0.476,0.442"/>
+        <FlipView/>
     </Grid>
 </Page>

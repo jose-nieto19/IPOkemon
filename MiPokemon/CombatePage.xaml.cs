@@ -13,6 +13,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.ViewManagement;
+using Windows.UI.Core;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -26,27 +27,47 @@ namespace MiPokemon
         public CombatePage()
         {
             this.InitializeComponent();
-            ApplicationView.GetForCurrentView().VisibleBoundsChanged += UcRatingText_VisibleBoundsChanged;
+            ApplicationView.GetForCurrentView().VisibleBoundsChanged += Comb2Jug_VisibleBoundsChanged;
 
         }
 
-        private void UcRatingText_VisibleBoundsChanged(ApplicationView sender, object args)
+        private void Comb2Jug_VisibleBoundsChanged(ApplicationView sender, object args)
         {
             var Width = ApplicationView.GetForCurrentView().VisibleBounds.Width;
-            if (Width >= 600)
+            if (Width >= 900)
             {
-                RelativePanel.SetBelow(tbPokemon, null);
-                RelativePanel.SetRightOf(tbPokemon, rcStars);
-                RelativePanel.SetAlignVerticalCenterWith(tbPokemon, rcStars);
-                RelativePanel.SetAlignVerticalCenterWithPanel(rcStars, true);
+                imLogo.Visibility = Visibility.Collapsed;
+                btn1jug.Visibility = Visibility.Visible;
+                btn2jug.Visibility = Visibility.Visible;
+                txtComb.Visibility = Visibility.Visible;
+                RelativePanel.SetAlignRightWithPanel(btn2jug, true);
+                RelativePanel.SetAlignTopWithPanel(btn1jug, false);
+                RelativePanel.SetAlignBottomWithPanel(btn2jug, false);
+            }
+            else if (Width >= 360)
+            {
+                imLogo.Visibility = Visibility.Collapsed;
+                btn1jug.Visibility = Visibility.Visible;
+                btn2jug.Visibility = Visibility.Visible;
+                txtComb.Visibility = Visibility.Visible;
+                RelativePanel.SetAlignTopWithPanel(btn1jug, true);
+                RelativePanel.SetAlignBottomWithPanel(btn2jug, true);
+                RelativePanel.SetAlignRightWithPanel(btn2jug, false);
             }
             else
             {
-                RelativePanel.SetRightOf(tbPokemon, null);
-                RelativePanel.SetBelow(tbPokemon, rcStars);
-                RelativePanel.SetAlignVerticalCenterWith(tbPokemon, null);
-                RelativePanel.SetAlignVerticalCenterWithPanel(rcStars, false);
+                imLogo.Visibility = Visibility.Visible;
+                btn1jug.Visibility = Visibility.Collapsed;
+                btn2jug.Visibility = Visibility.Collapsed;
+                txtComb.Visibility = Visibility.Collapsed;
             }
+
+        }
+
+        private void btn2jug_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ElegirPokemon2Jug));
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
         }
     }
 }

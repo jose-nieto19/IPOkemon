@@ -9,10 +9,22 @@
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
     <Grid>
-        <TextBox HorizontalAlignment="Left" Height="126" Margin="10,57,0,0" TextWrapping="Wrap" Text="Combate Pokemon" VerticalAlignment="Top" Width="761" FontSize="50" FontWeight="Bold"/>
-        <RelativePanel Background="White" Margin="0,275,0,0">
-            <RatingControl x:Name="rcStars" HorizontalAlignment="Center" VerticalAlignment="Center" Width="80" Height="32" RelativePanel.AlignVerticalCenterWithPanel="True"/>
-            <TextBox x:Name="tbPokemon" HorizontalAlignment="Left" Height="51" Text="Pikachu" TextWrapping="Wrap" VerticalAlignment="Center" Background="{x:Null}" FontSize="30" RelativePanel.AlignVerticalCenterWith="rcStars" RelativePanel.RightOf="rcStars"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="167*"/>
+            <RowDefinition Height="154*"/>
+            <RowDefinition Height="39*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="182*"/>
+            <ColumnDefinition Width="281*"/>
+            <ColumnDefinition Width="177*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="imBackground" Grid.ColumnSpan="3" Source="/Assets/FondoGimnasio.png" Stretch="Fill" Grid.RowSpan="3"/>
+        <Image x:Name="imLogo" Grid.ColumnSpan="3" Source="/Assets/logo.png" Visibility="Collapsed" Grid.RowSpan="3"/>
+        <TextBox x:Name="txtComb" x:Uid="txtComb" TextWrapping="Wrap" Text="Combate Pokemon&#xD;&#xA;Selecciona un modo de juego" HorizontalTextAlignment="Center" TextAlignment="Center" FontSize="50" FontWeight="Bold" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" AllowFocusOnInteraction="False" VerticalAlignment="Top" Margin="60,50,60,0" Height="239" Grid.ColumnSpan="3"/>
+        <RelativePanel Grid.Column="1" Grid.Row="1" >
+            <Button x:Name ="btn1jug" x:Uid="btn1jug" Content="1 JUGADOR" Height="70" Width="157"  RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="22"  Background="White" FontWeight="Bold"/>
+            <Button x:Name ="btn2jug" x:Uid="btn2jug" Content="2 JUGADORES" Height="70" Width="157"  RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" FontSize="20" Background="White" FontWeight="Bold" Click="btn2jug_Click"/>
         </RelativePanel>
     </Grid>
 </Page>

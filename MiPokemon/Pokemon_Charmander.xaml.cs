@@ -25,6 +25,7 @@ namespace Proyecto1_Charmander
         public Pokemon_Charmander()
         {
             this.InitializeComponent();
+            this.Fondo = false;
         }
 
         private bool verFondo = true;
@@ -119,7 +120,7 @@ namespace Proyecto1_Charmander
             dtTime.Start();
             this.imRPotion.Opacity = 0.5;
         }
-        private void increaseHealth(object sender, object e)
+        public void increaseHealth(object sender, object e)
         {
             this.pbHealth.Value += 2.5;
             if (pbHealth.Value >= 100)
@@ -129,7 +130,7 @@ namespace Proyecto1_Charmander
             }
         }
 
-        private void Ataque1_Click(object sender, RoutedEventArgs e)
+        public void Ataque1_Click(object sender, RoutedEventArgs e)
         {
             if (this.pbEnergy.Value > 0)
             {
@@ -148,7 +149,7 @@ namespace Proyecto1_Charmander
 
         }
 
-        private void usePotionEnergy(object sender, PointerRoutedEventArgs e)
+        public void usePotionEnergy(object sender, PointerRoutedEventArgs e)
         {
             dtTime = new DispatcherTimer();
             dtTime.Interval = TimeSpan.FromMilliseconds(100);
@@ -156,7 +157,7 @@ namespace Proyecto1_Charmander
             dtTime.Start();
             this.imP_energia.Opacity = 0.5;
         }
-        private void increaseEnergy(object sender, object e)
+        public void increaseEnergy(object sender, object e)
         {
             this.pbEnergy.Value += 2.5;
             if (pbEnergy.Value >= 100)
@@ -168,13 +169,13 @@ namespace Proyecto1_Charmander
             }
         }
 
-        private void Defensa_Click(object sender, RoutedEventArgs e)
+        public void Defensa_Click(object sender, RoutedEventArgs e)
         {
             Storyboard defensa = (Storyboard)this.Resources["Defensa1"];
             defensa.Begin();
         }
 
-        private void SuperAtaqueCharmander(object sender, RoutedEventArgs e)
+        public void SuperAtaqueCharmander(object sender, RoutedEventArgs e)
         {
             if (this.pbEnergy.Value > 50)
             {
@@ -184,7 +185,7 @@ namespace Proyecto1_Charmander
             }
         }
 
-        private void Charmander_Herido(object sender, RoutedEventArgs e)
+        public void Charmander_Herido(object sender, RoutedEventArgs e)
         {
             this.pbHealth.Value = 0;
             Storyboard herido = (Storyboard)this.Resources["Heridoo"];
