@@ -40,7 +40,7 @@ namespace MiPokemon
                 pokemonJ1 = "Porygon2";
                 numElecciones++;
             }
-            if (numElecciones == 1)
+            else if (numElecciones == 1)
             {
                 pokemonJ2 = "Porygon2";
                 Frame.Navigate(typeof(Combate2Jug), this);
@@ -57,7 +57,7 @@ namespace MiPokemon
                 pokemonJ1 = "Charmander";
                 numElecciones++;
             }
-            if (numElecciones == 1)
+            else if (numElecciones == 1)
             {
                 pokemonJ2 = "Charmander";
                 Frame.Navigate(typeof(Combate2Jug), this);
