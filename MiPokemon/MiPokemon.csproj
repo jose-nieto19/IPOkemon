@@ -134,9 +134,6 @@
     <Compile Include="ElegirPokemon2Jug.xaml.cs">
       <DependentUpon>ElegirPokemon2Jug.xaml</DependentUpon>
     </Compile>
-    <Compile Include="InfoGolbatPage.xaml.cs">
-      <DependentUpon>InfoGolbatPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="InitialPage.xaml.cs">
       <DependentUpon>InitialPage.xaml</DependentUpon>
     </Compile>
@@ -216,10 +213,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ElegirPokemon2Jug.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="InfoGolbatPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
