@@ -1,0 +1,37 @@
+﻿<Page
+    x:Class="MiPokemon.Combate2Jug"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiPokemon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="110*"/>
+            <RowDefinition Height="705*"/>
+            <RowDefinition Height="146*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+            <ColumnDefinition Width="100*"/>
+        </Grid.ColumnDefinitions>
+        <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/Assets/combate.jpg" Grid.RowSpan="3" Grid.ColumnSpan="4" Stretch="Fill"/>
+        <RelativePanel x:Name="ventanaIzq" Margin="30,30,30,30" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Rectangle Margin="30,30,30,30" Stroke="#FF6C68FF" Grid.Row="1" FocusVisualSecondaryBrush="#FF6C68FF" Grid.ColumnSpan="2"/>
+        <RelativePanel x:Name="VentanaDer" Grid.Column="2" Margin="30,30,30,30" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <Rectangle Grid.Column="2" Margin="30,30,30,30" Stroke="#FF6C68FF" Grid.Row="1" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="jugador1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="JUGADOR 1" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" Grid.ColumnSpan="2" Height="20" Width="84" FocusVisualPrimaryBrush="{x:Null}" Foreground="White"/>
+        <TextBlock x:Name="jugador2" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="JUGADOR 2" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Grid.ColumnSpan="2" Margin="333,0,0,0" Height="20" Width="84" Foreground="White"/>
+        <Rectangle x:Name="rectangulo1" Grid.ColumnSpan="2" Margin="15,15,15,15" Grid.RowSpan="2" Grid.Row="2" Stroke="Black" Fill="White" Visibility="Collapsed"/>
+        <Rectangle x:Name="rectangulo2" Grid.ColumnSpan="2" Margin="15,7,1,15" Grid.Row="2" Stroke="Black" Fill="White"/>
+        <TextBlock x:Name="Jugador2" HorizontalAlignment="Left" Margin="45,35,0,0" Grid.Row="3" TextWrapping="Wrap" Text="Turno Jugador 2. Elija un movimiento." VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold" Height="27" Width="230" Visibility="Collapsed"/>
+        <Button x:Name="Ataque" Grid.Column="2" Content="Ataque" Margin="185,22,370,35" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24" Grid.ColumnSpan="2" Click="AtaquePokemon"/>
+        <Button x:Name="Superataque" Grid.Column="3" Content="SuperAtaque" Margin="40,22,140,35" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24"/>
+        <TextBlock x:Name="Jugador1" HorizontalAlignment="Left" Margin="45,35,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Turno Jugador 1. Elija un movimiento." VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold" Height="76" Width="412" Grid.ColumnSpan="2"/>
+    </Grid>
+</Page>

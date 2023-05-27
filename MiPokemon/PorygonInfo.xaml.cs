@@ -20,26 +20,11 @@ namespace MiPokemon
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class PokedexPage : Page
+    public sealed partial class PorygonInfo : Page
     {
-        public PokedexPage()
+        public PorygonInfo()
         {
             this.InitializeComponent();
-            this.ucporygon.verBarraEnergia(false);
-            this.ucporygon.verBarraVida(false);
-            this.ucporygon.verBotones(false);
-            this.ucporygon.verFondo(false);
-            this.ucporygon.verIconos(false);
-        }
-
-        private void ucporygon_PointerReleased(object sender, PointerRoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Combate2Jug));
-        }
-
-        private void Charmander_PointerReleased(object sender, PointerRoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(CharmanderInfo));
         }
     }
 }

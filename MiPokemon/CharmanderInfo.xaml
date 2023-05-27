@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="MiPokemon.CharmanderInfo"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiPokemon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Custom="using:Proyecto1_Charmander"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid x:Name="Grid_Charmander" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image x:Name="fondo_charmander" Source="Assets/infoCharmander.jpg" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.65" Stretch="Fill" Margin="0,-1,0,0"/>
+        <TextBlock x:Name="tbNombrePokemon" Margin="180,70,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Nombre:"/>
+        <TextBlock x:Name="tbCategoriaPokemon" Margin="168,150,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Categoría:"/>
+        <TextBlock x:Name="tbTipoPokemon" Margin="227,230,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Tipo:"/>
+        <TextBlock x:Name="tbRarezaPokemon" Margin="201,310,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Rareza:"/>
+        <TextBlock x:Name="tbDescripcionPokemon" Margin="144,540,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Descripción:"/>
+        <TextBlock x:Name="tbEvolucionPokemon" Margin="165,620,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"><Run Text="Evolucion"/><Run Text=":"/></TextBlock>
+        <TextBlock x:Name="tbGeneracionPokemon" Margin="147,390,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"><Run Text="Generaci"/><Run Text="ón:"/></TextBlock>
+        <TextBlock x:Name="tbHabilidadPokemon" Margin="166,470,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Habilidad:"/>
+        <TextBlock x:Name="tbNombrePokemon2" Margin="300,70,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Charmander" RenderTransformOrigin="0.476,0.442"/>
+        <TextBlock x:Name="tbCategoriaPokemon2" Margin="301,150,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Lagartija"/>
+        <TextBlock x:Name="tbRarezaPokemon2" Margin="299,310,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Común"/>
+        <TextBlock x:Name="tbGeneracionPokemon2" Margin="297,390,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Primera"/>
+        <TextBlock x:Name="tbHabilidadPokemon2" Margin="300,470,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Mar llamas"/>
+        <TextBlock x:Name="tbTipoPokemon2" Margin="301,230,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Fuego"/>
+        <TextBlock x:Name="tbEvolucionPokemon2" Margin="300,620,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Charmeleon" RenderTransformOrigin="0.476,0.442"/>
+        <TextBlock x:Name="tbDescripcionPokemon2" Margin="300,540,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Pequeño lagarto de fuego" RenderTransformOrigin="0.476,0.442"/>
+        <FlipView/>
+    </Grid>
+</Page>

@@ -119,6 +119,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CharmanderInfo.xaml.cs">
+      <DependentUpon>CharmanderInfo.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Combate2Jug.xaml.cs">
+      <DependentUpon>Combate2Jug.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CombateMultijugador.xaml.cs">
+      <DependentUpon>CombateMultijugador.xaml</DependentUpon>
+    </Compile>
     <Compile Include="CombatePage.xaml.cs">
       <DependentUpon>CombatePage.xaml</DependentUpon>
     </Compile>
@@ -144,6 +153,9 @@
     <Compile Include="ucPorygon2.xaml.cs">
       <DependentUpon>ucPorygon2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ucPorygon2.xaml.cs">
+      <DependentUpon>ucPorygon2.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -152,6 +164,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BolaFuego.png" />
+    <Content Include="Assets\combate.jpg" />
+    <Content Include="Assets\evolucion_porygon.png" />
+    <Content Include="Assets\fondo_info_porygon.png" />
+    <Content Include="Assets\icono_pokedex.png" />
+    <Content Include="Assets\InfoCharmander.jpg" />
+    <Content Include="Assets\pokedex_fondo.jpg" />
     <Content Include="Assets\charmander.png" />
     <Content Include="Assets\energy.png" />
     <Content Include="Assets\fondo.jpg" />
@@ -181,6 +199,18 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Page Include="CharmanderInfo.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Combate2Jug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CombateMultijugador.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="CombatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -206,6 +236,16 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pokemon_Charmander.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="PorygonInfo.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ucPorygon2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>

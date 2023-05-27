@@ -105,7 +105,7 @@ namespace porygon2UC
             else this.tbName.Visibility = Visibility.Visible;
         }
 
-        private void usePotionRed(object sender, PointerRoutedEventArgs e)
+        public void usePotionRed(object sender, PointerRoutedEventArgs e)
         {
             if (pbHealth.Value != 100)
             {
@@ -123,7 +123,7 @@ namespace porygon2UC
             }
         }
 
-        private void usePotionYellow(object sender, PointerRoutedEventArgs e)
+        public void usePotionYellow(object sender, PointerRoutedEventArgs e)
         {
             if (pbEnergy.Value != 100)
             {
@@ -141,7 +141,7 @@ namespace porygon2UC
             }
         }
 
-        private void increaseHealth(object sender, object e)
+        public void increaseHealth(object sender, object e)
         {
             this.pbHealth.Value += 0.5;
             if (pbHealth.Value >= 100)
@@ -158,7 +158,7 @@ namespace porygon2UC
             }
         }
 
-        private void increaseEnergy(object sender, object e)
+        public void increaseEnergy(object sender, object e)
         {
             Storyboard sb = (Storyboard)this.Resources["sbFlotar"];
             this.pbEnergy.Value += 0.5;
@@ -175,14 +175,14 @@ namespace porygon2UC
             }
         }
 
-        private void hacerCosquillas(object sender, PointerRoutedEventArgs e)
+        public void hacerCosquillas(object sender, PointerRoutedEventArgs e)
         {
             Storyboard sb = (Storyboard)this.Resources["sbGuinarOjo"];
             sb.Begin();
 
         }
 
-        private void psicoataque(object sender, RoutedEventArgs e)
+        public void psicoataque(object sender, RoutedEventArgs e)
         {
             if (pbEnergy.Value >= 25)
             {
@@ -201,7 +201,7 @@ namespace porygon2UC
 
         }
 
-        private void recibirAtaque(object sender, RoutedEventArgs e)
+        public void recibirAtaque(object sender, RoutedEventArgs e)
         {
             Storyboard sb = (Storyboard)this.Resources["sbGuinarOjo"];
             Storyboard sb2 = (Storyboard)this.Resources["sbRecibirAtaque"];
