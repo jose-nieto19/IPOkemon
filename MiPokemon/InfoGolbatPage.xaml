@@ -8,8 +8,5 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-        <local:ucGolbat HorizontalAlignment="Center" VerticalAlignment="Center"/>
-
-    </Grid>
+    <Grid/>
 </Page>

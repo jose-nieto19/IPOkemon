@@ -21,7 +21,7 @@
             <ColumnDefinition Width="322*"/>
             <ColumnDefinition Width="200*"/>
         </Grid.ColumnDefinitions>
-        <Image x:Name="imBackground" Grid.ColumnSpan="5" Source="/Assets/FondoPokemon.jpg" Stretch="Fill" Grid.RowSpan="3"/>
+        <Image x:Name="imBackground" Grid.ColumnSpan="5" Source="/Assets/FondoGimnasio.png" Stretch="Fill" Grid.RowSpan="3"/>
         <Image x:Name="imLogo" Grid.ColumnSpan="5" Source="/Assets/logo.png" Visibility="Collapsed" Grid.RowSpan="3"/>
         <TextBox x:Name="txtEleccionJ1" x:Uid="txtEleccionJ1" TextWrapping="Wrap" Text="Jugador 1, seleccione un Pokemon" VerticalAlignment="Top" TextAlignment="Center" FontSize="50" FontWeight="Bold" Height="180" Margin="100,50,100,0" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" AllowFocusOnInteraction="False" Grid.ColumnSpan="5"/>
         <TextBox x:Name="txtEleccionJ2" x:Uid="txtEleccionJ2" TextWrapping="Wrap" Text="Jugador 2, seleccione un Pokemon" VerticalAlignment="Top" TextAlignment="Center" FontSize="50" FontWeight="Bold" Height="180" Margin="100,50,100,0" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" AllowFocusOnInteraction="False" Visibility="Collapsed" Grid.ColumnSpan="5"/>

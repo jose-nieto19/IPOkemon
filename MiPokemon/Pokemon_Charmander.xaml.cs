@@ -157,6 +157,7 @@ namespace Proyecto1_Charmander
             dtTime.Start();
             this.imP_energia.Opacity = 0.5;
         }
+        
         public void increaseEnergy(object sender, object e)
         {
             this.pbEnergy.Value += 2.5;

@@ -137,6 +137,9 @@
     <Compile Include="InfoGolbatPage.xaml.cs">
       <DependentUpon>InfoGolbatPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="InitialPage.xaml.cs">
+      <DependentUpon>InitialPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -146,15 +149,9 @@
     <Compile Include="Pokemon_Charmander.xaml.cs">
       <DependentUpon>Pokemon_Charmander.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PorygonInfo.xaml.cs">
-      <DependentUpon>PorygonInfo.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Prueba.xaml.cs">
-      <DependentUpon>Prueba.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="ucGolbat.xaml.cs">
-      <DependentUpon>ucGolbat.xaml</DependentUpon>
+    <Compile Include="ucPorygon2.xaml.cs">
+      <DependentUpon>ucPorygon2.xaml</DependentUpon>
     </Compile>
     <Compile Include="ucPorygon2.xaml.cs">
       <DependentUpon>ucPorygon2.xaml</DependentUpon>
@@ -167,30 +164,27 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BolaFuego.png" />
-    <Content Include="Assets\btn_informacion.png" />
-    <Content Include="Assets\charmander.png" />
-    <Content Include="Assets\charmander_mini.png" />
     <Content Include="Assets\combate.jpg" />
-    <Content Include="Assets\energy.jpg" />
-    <Content Include="Assets\energy.png" />
     <Content Include="Assets\evolucion_porygon.png" />
-    <Content Include="Assets\fondo.jpg" />
-    <Content Include="Assets\FondoPokemon.jpg" />
     <Content Include="Assets\fondo_info_porygon.png" />
-    <Content Include="Assets\health.png" />
     <Content Include="Assets\icono_pokedex.png" />
-    <Content Include="Assets\imEnergia.png" />
     <Content Include="Assets\InfoCharmander.jpg" />
     <Content Include="Assets\pokedex_fondo.jpg" />
+    <Content Include="Assets\charmander.png" />
+    <Content Include="Assets\energy.png" />
+    <Content Include="Assets\fondo.jpg" />
+    <Content Include="Assets\FondoGimnasio.png" />
+    <Content Include="Assets\FondoPokemon.jpg" />
+    <Content Include="Assets\health.png" />
+    <Content Include="Assets\imEnergia.png" />
+    <Content Include="Assets\logo.png" />
     <Content Include="Assets\porygon2.png" />
     <Content Include="Assets\potionRed.png" />
     <Content Include="Assets\potionYellow.png" />
     <Content Include="Assets\P_Energia.png" />
     <Content Include="Assets\P_Vida.png" />
-    <Content Include="Assets\RedPotion.jpg" />
     <Content Include="Assets\tirita.png" />
     <Content Include="Assets\Vida.png" />
-    <Content Include="Assets\YellowPotion.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -229,6 +223,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="InitialPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -245,13 +243,11 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Prueba.xaml">
       <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="ucGolbat.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="ucPorygon2.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="ucPorygon2.xaml">
       <Generator>MSBuild:Compile</Generator>
@@ -262,6 +258,16 @@
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.13</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.8.4</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <PRIResource Include="Strings\en-US\Resources.resw" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <PRIResource Include="Strings\es-ES\Resources.resw" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -35,7 +35,7 @@ namespace MiPokemon
         {
             txtEleccionJ1.Visibility = Visibility.Collapsed;
             txtEleccionJ2.Visibility = Visibility.Visible;
-            if (numElecciones == 0)
+            if(numElecciones == 0)
             {
                 pokemonJ1 = "Porygon2";
                 numElecciones++;
