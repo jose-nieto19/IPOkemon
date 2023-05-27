@@ -119,11 +119,11 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Comb2JugPage.xaml.cs">
-      <DependentUpon>Comb2JugPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CombatePage.xaml.cs">
       <DependentUpon>CombatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirPokemon2Jug.xaml.cs">
+      <DependentUpon>ElegirPokemon2Jug.xaml</DependentUpon>
     </Compile>
     <Compile Include="InfoGolbatPage.xaml.cs">
       <DependentUpon>InfoGolbatPage.xaml</DependentUpon>
@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\BolaFuego.png" />
+    <Content Include="Assets\charmander.png" />
     <Content Include="Assets\energy.png" />
     <Content Include="Assets\fondo.jpg" />
     <Content Include="Assets\FondoGimnasio.png" />
@@ -159,6 +160,7 @@
     <Content Include="Assets\health.png" />
     <Content Include="Assets\imEnergia.png" />
     <Content Include="Assets\logo.png" />
+    <Content Include="Assets\porygon2.png" />
     <Content Include="Assets\potionRed.png" />
     <Content Include="Assets\potionYellow.png" />
     <Content Include="Assets\P_Energia.png" />
@@ -179,11 +181,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="Comb2JugPage.xaml">
+    <Page Include="CombatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CombatePage.xaml">
+    <Page Include="ElegirPokemon2Jug.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -215,6 +217,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.NETCore.UniversalWindowsPlatform">
       <Version>6.2.13</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.UI.Xaml">
+      <Version>2.8.4</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>

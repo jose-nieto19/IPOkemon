@@ -136,6 +136,12 @@
     <value>Combate Pokemon
 Selecciona un modo de juego</value>
   </data>
+  <data name="txtEleccionJ1.Text" xml:space="preserve">
+    <value>Jugador 1, selecciona un Pokemon</value>
+  </data>
+  <data name="txtEleccionJ2.Text" xml:space="preserve">
+    <value>Jugador 2, selecciona un Pokemon</value>
+  </data>
   <data name="txtInicio.Text" xml:space="preserve">
     <value>Bienvenido a IPOkemon 2023
 Trabajo realizado por:

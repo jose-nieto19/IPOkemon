@@ -136,6 +136,12 @@
     <value>Pokemon Battle
 Choose the game mode</value>
   </data>
+  <data name="txtEleccionJ1.Text" xml:space="preserve">
+    <value>Player 1, choose a Pokemon</value>
+  </data>
+  <data name="txtEleccionJ2.Text" xml:space="preserve">
+    <value>Player 2, choose a Pokemon</value>
+  </data>
   <data name="txtInicio.Text" xml:space="preserve">
     <value>Welcome to IPOkemon 2023
 Work done by:
