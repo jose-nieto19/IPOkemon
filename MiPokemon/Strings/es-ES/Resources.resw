@@ -132,9 +132,24 @@
   <data name="btnInicio.Content" xml:space="preserve">
     <value>Inicio</value>
   </data>
+  <data name="txtCategoriaC2.Text" xml:space="preserve">
+    <value>Lagartija</value>
+  </data>
+  <data name="txtCategoriaP.Text" xml:space="preserve">
+    <value>Categoría:</value>
+  </data>
   <data name="txtComb.Text" xml:space="preserve">
     <value>Combate Pokemon
 Selecciona un modo de juego</value>
+  </data>
+  <data name="txtDescripcionC2.Text" xml:space="preserve">
+    <value>Pequeño lagarto de fuego</value>
+  </data>
+  <data name="txtDescripcionP.Text" xml:space="preserve">
+    <value>Descripción:</value>
+  </data>
+  <data name="txtDescripcionP2.Text" xml:space="preserve">
+    <value>Versión avanzada de Porygon</value>
   </data>
   <data name="txtEleccionJ1.Text" xml:space="preserve">
     <value>Jugador 1, selecciona un Pokemon</value>
@@ -142,10 +157,49 @@ Selecciona un modo de juego</value>
   <data name="txtEleccionJ2.Text" xml:space="preserve">
     <value>Jugador 2, selecciona un Pokemon</value>
   </data>
+  <data name="txtEvolucionP.Text" xml:space="preserve">
+    <value>Evolución:</value>
+  </data>
+  <data name="txtGeneracionC2.Text" xml:space="preserve">
+    <value>Primera</value>
+  </data>
+  <data name="txtGeneracionP.Text" xml:space="preserve">
+    <value>Generación:</value>
+  </data>
+  <data name="txtGeneracionP2.Text" xml:space="preserve">
+    <value>Segunda</value>
+  </data>
+  <data name="txtHabilidadC2.Text" xml:space="preserve">
+    <value>Mar llamas</value>
+  </data>
+  <data name="txtHabilidadP.Text" xml:space="preserve">
+    <value>Habilidad:</value>
+  </data>
+  <data name="txtHabilidadP2.Text" xml:space="preserve">
+    <value>Cálculo final</value>
+  </data>
   <data name="txtInicio.Text" xml:space="preserve">
     <value>Bienvenido a IPOkemon 2023
 Trabajo realizado por:
 - Raúl Moya Campillos
 - José Luis Nieto García-Carpintero</value>
+  </data>
+  <data name="txtNombreP.Text" xml:space="preserve">
+    <value>Nombre:</value>
+  </data>
+  <data name="txtRarezaC2.Text" xml:space="preserve">
+    <value>Común</value>
+  </data>
+  <data name="txtRarezaP.Text" xml:space="preserve">
+    <value>Rareza:</value>
+  </data>
+  <data name="txtRarezaP2.Text" xml:space="preserve">
+    <value>Infrecuente</value>
+  </data>
+  <data name="txtTipoC2.Text" xml:space="preserve">
+    <value>Fuego</value>
+  </data>
+  <data name="txtTipoP.Text" xml:space="preserve">
+    <value>Tipo:</value>
   </data>
 </root>

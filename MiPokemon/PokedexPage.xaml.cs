@@ -12,6 +12,7 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.ViewManagement;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -30,16 +31,40 @@ namespace MiPokemon
             this.ucporygon.verBotones(false);
             this.ucporygon.verFondo(false);
             this.ucporygon.verIconos(false);
+            ApplicationView.GetForCurrentView().VisibleBoundsChanged += PokedexPage_VisibleBoundsChanged;
+        }
+
+        private void PokedexPage_VisibleBoundsChanged(ApplicationView sender, object args)
+        {
+            var Width = ApplicationView.GetForCurrentView().VisibleBounds.Width;
+            if (Width >= 1200)
+            {
+                imLogo.Visibility = Visibility.Collapsed;
+                Charmander.Visibility = Visibility.Visible;
+                ucporygon.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                imLogo.Visibility = Visibility.Visible;
+                Charmander.Visibility = Visibility.Collapsed;
+                ucporygon.Visibility = Visibility.Collapsed;
+            }
+
         }
 
         private void ucporygon_PointerReleased(object sender, PointerRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Combate2Jug));
+            Frame.Navigate(typeof(PorygonInfo));
         }
 
         private void Charmander_PointerReleased(object sender, PointerRoutedEventArgs e)
         {
             Frame.Navigate(typeof(CharmanderInfo));
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PorygonInfo));
         }
     }
 }

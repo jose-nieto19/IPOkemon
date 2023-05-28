@@ -124,7 +124,7 @@
     <value>2 PLAYERS</value>
   </data>
   <data name="btnAcercaDe.Content" xml:space="preserve">
-    <value>No se jaja</value>
+    <value>About us</value>
   </data>
   <data name="btnCombatePokemon.Content" xml:space="preserve">
     <value>Pokemon Battle</value>
@@ -132,9 +132,24 @@
   <data name="btnInicio.Content" xml:space="preserve">
     <value>Home</value>
   </data>
+  <data name="txtCategoriaC2.Text" xml:space="preserve">
+    <value>Lizard</value>
+  </data>
+  <data name="txtCategoriaP.Text" xml:space="preserve">
+    <value>Category:</value>
+  </data>
   <data name="txtComb.Text" xml:space="preserve">
     <value>Pokemon Battle
 Choose the game mode</value>
+  </data>
+  <data name="txtDescripcionC2.Text" xml:space="preserve">
+    <value>Little lizard of fire</value>
+  </data>
+  <data name="txtDescripcionP.Text" xml:space="preserve">
+    <value>Description:</value>
+  </data>
+  <data name="txtDescripcionP2.Text" xml:space="preserve">
+    <value>Advanced version of Porygon</value>
   </data>
   <data name="txtEleccionJ1.Text" xml:space="preserve">
     <value>Player 1, choose a Pokemon</value>
@@ -142,10 +157,49 @@ Choose the game mode</value>
   <data name="txtEleccionJ2.Text" xml:space="preserve">
     <value>Player 2, choose a Pokemon</value>
   </data>
+  <data name="txtEvolucionP.Text" xml:space="preserve">
+    <value>Evolution:</value>
+  </data>
+  <data name="txtGeneracionC2.Text" xml:space="preserve">
+    <value>First</value>
+  </data>
+  <data name="txtGeneracionP.Text" xml:space="preserve">
+    <value>Generation:</value>
+  </data>
+  <data name="txtGeneracionP2.Text" xml:space="preserve">
+    <value>Second</value>
+  </data>
+  <data name="txtHabilidadC2.Text" xml:space="preserve">
+    <value>Fire sea</value>
+  </data>
+  <data name="txtHabilidadP.Text" xml:space="preserve">
+    <value>Hability:</value>
+  </data>
+  <data name="txtHabilidadP2.Text" xml:space="preserve">
+    <value>Final calculation</value>
+  </data>
   <data name="txtInicio.Text" xml:space="preserve">
     <value>Welcome to IPOkemon 2023
 Work done by:
 - Raúl Moya Campillos
 - José Luis Nieto García-Carpintero</value>
+  </data>
+  <data name="txtNombreP.Text" xml:space="preserve">
+    <value>Name:</value>
+  </data>
+  <data name="txtRarezaC2.Text" xml:space="preserve">
+    <value>Common</value>
+  </data>
+  <data name="txtRarezaP.Text" xml:space="preserve">
+    <value>Rarity:</value>
+  </data>
+  <data name="txtRarezaP2.Text" xml:space="preserve">
+    <value>Infrequent</value>
+  </data>
+  <data name="txtTipoC2.Text" xml:space="preserve">
+    <value>Fire</value>
+  </data>
+  <data name="txtTipoP.Text" xml:space="preserve">
+    <value>Type:</value>
   </data>
 </root>
