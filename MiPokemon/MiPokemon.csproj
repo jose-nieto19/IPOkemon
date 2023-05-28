@@ -153,6 +153,12 @@
     <Compile Include="ucPorygon2.xaml.cs">
       <DependentUpon>ucPorygon2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VictoriaCombate.xaml.cs">
+      <DependentUpon>VictoriaCombate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VictoriaCombate2Jug.xaml.cs">
+      <DependentUpon>VictoriaCombate2Jug.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -164,6 +170,7 @@
     <Content Include="Assets\combate.jpg" />
     <Content Include="Assets\evolucion_porygon.png" />
     <Content Include="Assets\fondo_info_porygon.png" />
+    <Content Include="Assets\fondo_victoria.jpg" />
     <Content Include="Assets\icono_pokedex.png" />
     <Content Include="Assets\InfoCharmander.jpg" />
     <Content Include="Assets\pokedex_fondo.jpg" />
@@ -181,6 +188,7 @@
     <Content Include="Assets\P_Energia.png" />
     <Content Include="Assets\P_Vida.png" />
     <Content Include="Assets\tirita.png" />
+    <Content Include="Assets\victoria.png" />
     <Content Include="Assets\Vida.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
@@ -243,6 +251,14 @@
     <Page Include="ucPorygon2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VictoriaCombate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VictoriaCombate2Jug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

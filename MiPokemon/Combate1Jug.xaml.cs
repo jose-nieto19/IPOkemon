@@ -31,8 +31,10 @@ namespace MiPokemon
         private UserControl pokemonIzq = null;
         private UserControl pokemonDer = null;
 
-        String pokemon1;
-        String pokemon2;
+        public String pokemon1;
+        public String pokemon2;
+        public String ganador;
+
         int turno = 1;
 
         Pokemon_Charmander charmander = new Pokemon_Charmander();
@@ -137,7 +139,8 @@ namespace MiPokemon
                 Jugador1.Visibility = Visibility.Collapsed;
                 Jugador2.Visibility = Visibility.Visible;
                 await Task.Delay(5000); // Retraso de 5 segundos
-                AtaquePokemonAsync(null, new RoutedEventArgs());
+                MovimientoMaquina();
+             
             }
             else
             {
@@ -172,6 +175,26 @@ namespace MiPokemon
             }
         }
 
+        public void MovimientoMaquina()
+        {
+            if (pokemon2 == "Charmander")
+            {
+                if (charmander2.Vida >= 0 && charmander2.Vida <= 25 && !PocionVidaPokemon2)
+                {
+                    PocionVidaPokemon2 = true;
+                    CurarPokemon(null, new RoutedEventArgs());
+                }
+                else if (charmander2.Energy < 25)
+                {
+                    DarEnergiaPokemon(null, new RoutedEventArgs());
+                }
+                else
+                {
+                    AtaquePokemonAsync(null, new RoutedEventArgs());
+                }
+            }
+        }
+
         public void comprobarVidaPokemon1()
         {
 
@@ -179,14 +202,16 @@ namespace MiPokemon
             {
                 if (charmander.Vida <= 0)
                 {
-                    //
+                    ganador = "Pokemon2";
+                    Frame.Navigate(typeof(VictoriaCombate), this);
                 }
             }
             else
             {
                 if (porygon.Vida <= 0)
                 {
-                    //
+                    ganador = "Pokemon2";
+                    Frame.Navigate(typeof(VictoriaCombate), this);
                 }
             }
 
@@ -199,20 +224,22 @@ namespace MiPokemon
             {
                 if (charmander2.Vida <= 0)
                 {
-                    //
+                    ganador = "Pokemon1";
+                    Frame.Navigate(typeof(VictoriaCombate), this);
                 }
             }
             else
             {
                 if (porygon2.Vida <= 0)
                 {
-                    //
+                    ganador = "Pokemon1";
+                    Frame.Navigate(typeof(VictoriaCombate), this);
                 }
             }
 
         }
 
-        private void CurarPokemon(object sender, RoutedEventArgs e)
+        private async void CurarPokemon(object sender, RoutedEventArgs e)
         {
 
             if (!PocionVidaPokemon1)
@@ -247,12 +274,13 @@ namespace MiPokemon
                     Jugador2.Visibility = Visibility.Collapsed;
                     Jugador1.Visibility = Visibility.Visible;
                 }
-
+                await Task.Delay(5000); // Retraso de 5 segundos
+                MovimientoMaquina();
             }
 
         }
 
-        private void DarEnergiaPokemon(object sender, RoutedEventArgs e)
+        private async void DarEnergiaPokemon(object sender, RoutedEventArgs e)
         {
             if (turno == 1)
             {
@@ -282,6 +310,8 @@ namespace MiPokemon
                 Jugador2.Visibility = Visibility.Collapsed;
                 Jugador1.Visibility = Visibility.Visible;
             }
+            await Task.Delay(5000); // Retraso de 5 segundos
+            MovimientoMaquina();
         }
 
         

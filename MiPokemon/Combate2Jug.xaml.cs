@@ -31,8 +31,9 @@ namespace MiPokemon
         private UserControl pokemonIzq = null;
         private UserControl pokemonDer = null;
 
-        String pokemon1;
-        String pokemon2;
+        public String pokemon1;
+        public String pokemon2;
+        public String ganador;
         int turno = 1;
 
         Pokemon_Charmander charmander = new Pokemon_Charmander();
@@ -178,14 +179,16 @@ namespace MiPokemon
             {
                 if (charmander.Vida <= 0)
                 {
-                   //
+                    ganador = "Pokemon2";
+                    Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
             }
             else
             {
                 if (porygon.Vida <= 0)
                 {
-                    //
+                    ganador = "Pokemon2";
+                    Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
             }
             
@@ -198,14 +201,16 @@ namespace MiPokemon
             {
                 if (charmander2.Vida <= 0)
                 {
-                    //
+                    ganador = "Pokemon1";
+                    Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
             }
             else
             {
                 if (porygon2.Vida <= 0)
                 {
-                    //
+                    ganador = "Pokemon1";
+                    Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
             }
             
