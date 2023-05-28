@@ -23,8 +23,8 @@ namespace MiPokemon
     public sealed partial class ElegirPokemon2Jug : Page
     {
         int numElecciones;
-        string pokemonJ1;
-        string pokemonJ2;
+        public string pokemonJ1;
+        public string pokemonJ2;
         public ElegirPokemon2Jug()
         {
             this.InitializeComponent();

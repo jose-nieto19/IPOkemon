@@ -25,8 +25,11 @@ namespace Proyecto1_Charmander
         public Pokemon_Charmander()
         {
             this.InitializeComponent();
+            this.Vida = 100;
+            this.Energy = 100;
             this.Fondo = false;
         }
+        
 
         private bool verFondo = true;
         private bool verBarraVida = true;
@@ -112,7 +115,7 @@ namespace Proyecto1_Charmander
         }
 
 
-        private void usePotionRed(object sender, PointerRoutedEventArgs e)
+        public void usePotionRed(object sender, PointerRoutedEventArgs e)
         {
             dtTime = new DispatcherTimer();
             dtTime.Interval = TimeSpan.FromMilliseconds(100);
@@ -120,10 +123,29 @@ namespace Proyecto1_Charmander
             dtTime.Start();
             this.imRPotion.Opacity = 0.5;
         }
+
+        public void CurarPokemon()
+        {
+            dtTime = new DispatcherTimer();
+            dtTime.Interval = TimeSpan.FromMilliseconds(100);
+            dtTime.Tick += increaseHealth;
+            dtTime.Start();
+            this.imRPotion.Opacity = 0.5;
+        }
+
+        public void DarEnergia()
+        {
+            dtTime = new DispatcherTimer();
+            dtTime.Interval = TimeSpan.FromMilliseconds(100);
+            dtTime.Tick += increaseEnergy;
+            dtTime.Start();
+            this.imP_energia.Opacity = 0.5;
+        }
+
         public void increaseHealth(object sender, object e)
         {
             this.pbHealth.Value += 2.5;
-            if (pbHealth.Value >= 100)
+            if (pbHealth.Value >= 75)
             {
                 this.dtTime.Stop();
                 this.imRPotion.Opacity = 1;
@@ -174,6 +196,14 @@ namespace Proyecto1_Charmander
         {
             Storyboard defensa = (Storyboard)this.Resources["Defensa1"];
             defensa.Begin();
+            if (this.pbHealth.Value >= 25)
+            {
+                this.pbHealth.Value -= 25;
+            }
+            if (this.pbHealth.Value <= 0)
+            {
+                Charmander_Herido(null, new RoutedEventArgs());
+            }
         }
 
         public void SuperAtaqueCharmander(object sender, RoutedEventArgs e)

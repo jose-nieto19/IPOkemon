@@ -34,7 +34,7 @@ namespace MiPokemon
 
         private void ucporygon_PointerReleased(object sender, PointerRoutedEventArgs e)
         {
-            Frame.Navigate(typeof(Combate2Jug));
+            Frame.Navigate(typeof(PorygonInfo));
         }
 
         private void Charmander_PointerReleased(object sender, PointerRoutedEventArgs e)

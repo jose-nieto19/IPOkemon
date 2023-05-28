@@ -20,11 +20,29 @@ namespace MiPokemon
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class CombateMultijugador : Page
+    public sealed partial class ElegirPokemon1Jug : Page
     {
-        public CombateMultijugador()
+        public string pokemonJ1;
+        public string pokemonJ2;
+        public ElegirPokemon1Jug()
         {
             this.InitializeComponent();
         }
+        private void btnPorygon_Click(object sender, RoutedEventArgs e)
+        {
+            pokemonJ1 = "Porygon2";
+            pokemonJ2 = "Charmander";
+            Frame.Navigate(typeof(Combate1Jug), this);
+        }
+
+       
+        private void btnCharmander_Click(object sender, RoutedEventArgs e)
+        {
+            
+            pokemonJ1 = "Charmander";
+            pokemonJ2 = "Porygon2";
+            Frame.Navigate(typeof(Combate1Jug), this);
+        }
     }
+    
 }

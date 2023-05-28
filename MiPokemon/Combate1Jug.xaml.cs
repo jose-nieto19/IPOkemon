@@ -2,11 +2,11 @@
 using Proyecto1_Charmander;
 using System;
 using System.Collections.Generic;
-using System.Diagnostics.Tracing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Devices.Input;
+using System.Threading.Tasks;
+using System.Threading;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -24,9 +24,9 @@ namespace MiPokemon
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class Combate2Jug : Page
+    public sealed partial class Combate1Jug : Page
     {
-        ElegirPokemon2Jug padre;
+        ElegirPokemon1Jug padre;
 
         private UserControl pokemonIzq = null;
         private UserControl pokemonDer = null;
@@ -43,16 +43,14 @@ namespace MiPokemon
 
         bool PocionVidaPokemon1 = false;
         bool PocionVidaPokemon2 = false;
-
-        public Combate2Jug()
+        public Combate1Jug()
         {
             this.InitializeComponent();
-
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            padre = (ElegirPokemon2Jug)e.Parameter;
+            padre = (ElegirPokemon1Jug)e.Parameter;
             pokemon1 = padre.pokemonJ1;
             pokemon2 = padre.pokemonJ2;
             this.CargarPokemons(pokemon1, pokemon2);
@@ -105,7 +103,7 @@ namespace MiPokemon
 
         }
 
-        private void AtaquePokemon(object sender, RoutedEventArgs e)
+        private async void AtaquePokemonAsync(object sender, RoutedEventArgs e)
         {
             if (turno == 1)
             {
@@ -135,8 +133,11 @@ namespace MiPokemon
                 }
                 comprobarVidaPokemon2();
                 turno = 2;
+                
                 Jugador1.Visibility = Visibility.Collapsed;
                 Jugador2.Visibility = Visibility.Visible;
+                await Task.Delay(5000); // Retraso de 5 segundos
+                AtaquePokemonAsync(null, new RoutedEventArgs());
             }
             else
             {
@@ -173,12 +174,12 @@ namespace MiPokemon
 
         public void comprobarVidaPokemon1()
         {
-            
+
             if (pokemon1 == "Charmander")
             {
                 if (charmander.Vida <= 0)
                 {
-                   //
+                    //
                 }
             }
             else
@@ -188,12 +189,12 @@ namespace MiPokemon
                     //
                 }
             }
-            
+
         }
 
         public void comprobarVidaPokemon2()
         {
-            
+
             if (pokemon2 == "Charmander")
             {
                 if (charmander2.Vida <= 0)
@@ -208,7 +209,7 @@ namespace MiPokemon
                     //
                 }
             }
-            
+
         }
 
         private void CurarPokemon(object sender, RoutedEventArgs e)
@@ -246,9 +247,9 @@ namespace MiPokemon
                     Jugador2.Visibility = Visibility.Collapsed;
                     Jugador1.Visibility = Visibility.Visible;
                 }
-               
+
             }
-            
+
         }
 
         private void DarEnergiaPokemon(object sender, RoutedEventArgs e)
@@ -282,5 +283,7 @@ namespace MiPokemon
                 Jugador1.Visibility = Visibility.Visible;
             }
         }
+
+        
     }
 }

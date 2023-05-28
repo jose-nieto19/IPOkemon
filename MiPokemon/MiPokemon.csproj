@@ -122,14 +122,17 @@
     <Compile Include="CharmanderInfo.xaml.cs">
       <DependentUpon>CharmanderInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Combate1Jug.xaml.cs">
+      <DependentUpon>Combate1Jug.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Combate2Jug.xaml.cs">
       <DependentUpon>Combate2Jug.xaml</DependentUpon>
     </Compile>
-    <Compile Include="CombateMultijugador.xaml.cs">
-      <DependentUpon>CombateMultijugador.xaml</DependentUpon>
-    </Compile>
     <Compile Include="CombatePage.xaml.cs">
       <DependentUpon>CombatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirPokemon1Jug.xaml.cs">
+      <DependentUpon>ElegirPokemon1Jug.xaml</DependentUpon>
     </Compile>
     <Compile Include="ElegirPokemon2Jug.xaml.cs">
       <DependentUpon>ElegirPokemon2Jug.xaml</DependentUpon>
@@ -197,15 +200,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Combate1Jug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Combate2Jug.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CombateMultijugador.xaml">
+    <Page Include="CombatePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="CombatePage.xaml">
+    <Page Include="ElegirPokemon1Jug.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
