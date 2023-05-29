@@ -195,13 +195,14 @@ namespace MiPokemon
             }
         }
 
-        public void comprobarVidaPokemon1()
+        public async void comprobarVidaPokemon1()
         {
 
             if (pokemon1 == "Charmander")
             {
                 if (charmander.Vida <= 0)
                 {
+                    await Task.Delay(2000);
                     ganador = "Pokemon2";
                     Frame.Navigate(typeof(VictoriaCombate), this);
                 }
@@ -210,6 +211,7 @@ namespace MiPokemon
             {
                 if (porygon.Vida <= 0)
                 {
+                    await Task.Delay(2000);
                     ganador = "Pokemon2";
                     Frame.Navigate(typeof(VictoriaCombate), this);
                 }
@@ -217,7 +219,7 @@ namespace MiPokemon
 
         }
 
-        public void comprobarVidaPokemon2()
+        public async void comprobarVidaPokemon2()
         {
 
             if (pokemon2 == "Charmander")

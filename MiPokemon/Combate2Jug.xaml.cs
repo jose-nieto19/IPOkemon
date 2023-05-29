@@ -6,6 +6,7 @@ using System.Diagnostics.Tracing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Devices.Input;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -172,13 +173,14 @@ namespace MiPokemon
             }
         }
 
-        public void comprobarVidaPokemon1()
+        public async void comprobarVidaPokemon1()
         {
             
             if (pokemon1 == "Charmander")
             {
                 if (charmander.Vida <= 0)
                 {
+                    await Task.Delay(2000);
                     ganador = "Pokemon2";
                     Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
@@ -187,6 +189,7 @@ namespace MiPokemon
             {
                 if (porygon.Vida <= 0)
                 {
+                    await Task.Delay(2000);
                     ganador = "Pokemon2";
                     Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
@@ -194,13 +197,14 @@ namespace MiPokemon
             
         }
 
-        public void comprobarVidaPokemon2()
+        public async void comprobarVidaPokemon2()
         {
             
             if (pokemon2 == "Charmander")
             {
                 if (charmander2.Vida <= 0)
                 {
+                    await Task.Delay(2000);
                     ganador = "Pokemon1";
                     Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
@@ -209,6 +213,7 @@ namespace MiPokemon
             {
                 if (porygon2.Vida <= 0)
                 {
+                    await Task.Delay(2000);
                     ganador = "Pokemon1";
                     Frame.Navigate(typeof(VictoriaCombate2Jug), this);
                 }
