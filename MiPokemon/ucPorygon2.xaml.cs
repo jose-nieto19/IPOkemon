@@ -179,7 +179,7 @@ namespace porygon2UC
 
             public void increaseHealth(object sender, object e)
         {
-            this.pbHealth.Value += 0.5;
+            this.pbHealth.Value += 2.5;
             if (pbHealth.Value >= 75)
             {
                 cvTiritasPecho.Visibility = Visibility.Collapsed;
@@ -197,7 +197,7 @@ namespace porygon2UC
         public void increaseEnergy(object sender, object e)
         {
             Storyboard sb = (Storyboard)this.Resources["sbFlotar"];
-            this.pbEnergy.Value += 0.5;
+            this.pbEnergy.Value += 2.5;
             if (pbEnergy.Value >= 100)
             {
                 sudor.Visibility = Visibility.Collapsed;

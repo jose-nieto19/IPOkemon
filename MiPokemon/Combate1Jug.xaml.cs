@@ -137,7 +137,7 @@ namespace MiPokemon
                 turno = 2;
                 
                 Jugador1.Visibility = Visibility.Collapsed;
-                Jugador2.Visibility = Visibility.Visible;
+                Maquina.Visibility = Visibility.Visible;
                 await Task.Delay(5000); // Retraso de 5 segundos
                 MovimientoMaquina();
              
@@ -170,7 +170,7 @@ namespace MiPokemon
                 }
                 comprobarVidaPokemon1();
                 turno = 1;
-                Jugador2.Visibility = Visibility.Collapsed;
+                Maquina.Visibility = Visibility.Collapsed;
                 Jugador1.Visibility = Visibility.Visible;
             }
         }
@@ -257,7 +257,7 @@ namespace MiPokemon
                     PocionVidaPokemon1 = true;
                     turno = 2;
                     Jugador1.Visibility = Visibility.Collapsed;
-                    Jugador2.Visibility = Visibility.Visible;
+                    Maquina.Visibility = Visibility.Visible;
                 }
                 else if (!PocionVidaPokemon2)
                 {
@@ -271,7 +271,7 @@ namespace MiPokemon
                     }
                     PocionVidaPokemon2 = true;
                     turno = 1;
-                    Jugador2.Visibility = Visibility.Collapsed;
+                    Maquina.Visibility = Visibility.Collapsed;
                     Jugador1.Visibility = Visibility.Visible;
                 }
                 await Task.Delay(5000); // Retraso de 5 segundos
@@ -294,7 +294,7 @@ namespace MiPokemon
                 }
                 turno = 2;
                 Jugador1.Visibility = Visibility.Collapsed;
-                Jugador2.Visibility = Visibility.Visible;
+                Maquina.Visibility = Visibility.Visible;
             }
             else
             {
@@ -307,7 +307,7 @@ namespace MiPokemon
                     porygon2.DarEnergia();
                 }
                 turno = 1;
-                Jugador2.Visibility = Visibility.Collapsed;
+                Maquina.Visibility = Visibility.Collapsed;
                 Jugador1.Visibility = Visibility.Visible;
             }
             await Task.Delay(5000); // Retraso de 5 segundos
