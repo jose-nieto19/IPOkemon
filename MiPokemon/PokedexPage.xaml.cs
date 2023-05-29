@@ -62,9 +62,5 @@ namespace MiPokemon
             Frame.Navigate(typeof(CharmanderInfo));
         }
 
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(PorygonInfo));
-        }
     }
 }

@@ -22,14 +22,15 @@
         </Grid.ColumnDefinitions>
         <Image x:Name="fondo_victoria" Source="/Assets/fondo_victoria.jpg" Grid.ColumnSpan="4" Grid.RowSpan="3" Stretch="Fill"/>
         <Grid x:Name="grid_texto" Grid.Row="1" Grid.Column="1" Background="#E5FFFFFF" FocusVisualSecondaryBrush="White" FocusVisualPrimaryBrush="{x:Null}">
-            <TextBlock x:Name="VictoriaJug1" Margin="15,20,58,25" TextWrapping="Wrap" FontSize="75" Foreground="Black" FontWeight="Bold" FontFamily="Segoe UI Black" Visibility="Collapsed"><Run Text="Jugador 1. "/><LineBreak/><Run/><LineBreak/><Run Text="Has ganado el combate."/></TextBlock>
-            <TextBlock x:Name="VictoriaJug2" Margin="23,20,52,20" TextWrapping="Wrap" FontSize="75" Foreground="Black" FontWeight="Bold"><Run Text="Jugador 2. "/><LineBreak/><Run/><LineBreak/><Run Text="Has ganado el combate."/></TextBlock>
+            <TextBlock x:Name="VictoriaJug1" x:Uid="txtVic1" Margin="15,20,58,25" TextWrapping="Wrap" FontSize="55" Foreground="Black" FontWeight="Bold" FontFamily="Segoe UI Black" Visibility="Collapsed"><Run Text="Jugador 1. "/><LineBreak/><Run/><LineBreak/><Run Text="Has ganado el combate."/></TextBlock>
+            <TextBlock x:Name="VictoriaJug2" x:Uid="txtVic2" Margin="23,20,52,20" TextWrapping="Wrap" FontSize="55" Foreground="Black" FontWeight="Bold" Visibility="Collapsed"><Run Text="Jugador 2. "/><LineBreak/><Run/><LineBreak/><Run Text="Has ganado el combate."/></TextBlock>
         </Grid>
         <Grid x:Name="gridFotoPokemon" Grid.Row="1" Grid.Column="2" Background="#E5FFFFFF">
             <Image x:Name="VicPokemonPorygon" Source="/Assets/porygon2.png" Margin="0,-1,0,1" Grid.Row="1" Grid.Column="2" Visibility="Collapsed"/>
             <Image x:Name="VicPokemonCharmander" Source="/Assets/charmander.png" Margin="0,-1,0,1" Grid.Row="1" Grid.Column="2" Visibility="Collapsed"/>
         </Grid>
         <Image x:Name="trofeo" Grid.Column="3" Source="/Assets/victoria.png"/>
+        <Button x:Name="btnVolver" x:Uid="btnVolver" Grid.Column="2" Content="Volver a combate" Height="82" Grid.Row="2" Width="257" HorizontalAlignment="Center" FontSize="25" FontWeight="Bold" Background="White" Click="btnVolver_Click"/>
 
     </Grid>
 </Page>

@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="MiPokemon.AcercaDePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MiPokemon"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Image x:Name="imBackground" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" Source="/Assets/FondoGimnasio.png" Stretch="Fill"/>
+        <TextBox x:Name="txtAcercaDe" x:Uid="txtAcercaDe" TextWrapping="Wrap" Text="En este trabajo se ha implementado la opción del combate Pokemon. Su funcionamiento es el siguiente:&#xD;&#xA;Primero se selecciona el número de jugadores (1 o 2) y, tras esto, los Pokemon que usaran dichos jugadores. Una vez todo listo, comieza el combate Pokemon y finaliza cuando uno de los dos se queda sin vida, cargando así una página de victoria.&#xD;&#xA;&#xD;&#xA;Una consideración adicional:&#xD;&#xA;Para poder ver la información de los Pokemon en la Pokedex, se debe hacer click encima de ellos." VerticalAlignment="Top" FontSize="30" FontWeight="Bold" Height="617" Margin="61,45,74,0" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" AllowFocusOnInteraction="False"/>
+
+    </Grid>
+</Page>

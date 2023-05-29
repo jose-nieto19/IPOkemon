@@ -126,11 +126,30 @@
   <data name="btnAcercaDe.Content" xml:space="preserve">
     <value>About us</value>
   </data>
+  <data name="btnAtaque.Content" xml:space="preserve">
+    <value>Attack</value>
+  </data>
   <data name="btnCombatePokemon.Content" xml:space="preserve">
     <value>Pokemon Battle</value>
   </data>
+  <data name="btnCurar.Content" xml:space="preserve">
+    <value>Heal</value>
+  </data>
+  <data name="btnEnergia.Content" xml:space="preserve">
+    <value>Energy</value>
+  </data>
   <data name="btnInicio.Content" xml:space="preserve">
     <value>Home</value>
+  </data>
+  <data name="btnVolver.Content" xml:space="preserve">
+    <value>Back to battle</value>
+  </data>
+  <data name="txtAcercaDe.Text" xml:space="preserve">
+    <value>In this work we have implemented the Pokemon Battle. It works in the following way:
+First of all, we have to choose the number of players (1 or 2) and then we choose the Pokemon we are going to use. After that, the Pokemon Battle starts and it ends when any of them gets 0 HP (Health Points). When the battle ends, we go to a victory page.
+
+One last thing:
+If you want to see the information of a Pokemon in the Pokedex, you have to click on them.</value>
   </data>
   <data name="txtCategoriaC2.Text" xml:space="preserve">
     <value>Lizard</value>
@@ -184,6 +203,15 @@ Work done by:
 - Raúl Moya Campillos
 - José Luis Nieto García-Carpintero</value>
   </data>
+  <data name="txtJ1.Text" xml:space="preserve">
+    <value>PLAYER 1</value>
+  </data>
+  <data name="txtJ2.Text" xml:space="preserve">
+    <value>PLAYER 2</value>
+  </data>
+  <data name="txtMaquina.Text" xml:space="preserve">
+    <value>IA's turn. Choosing action...</value>
+  </data>
   <data name="txtNombreP.Text" xml:space="preserve">
     <value>Name:</value>
   </data>
@@ -201,5 +229,19 @@ Work done by:
   </data>
   <data name="txtTipoP.Text" xml:space="preserve">
     <value>Type:</value>
+  </data>
+  <data name="txtTurnoJ1.Text" xml:space="preserve">
+    <value>Player 1 turn. Choose an action.</value>
+  </data>
+  <data name="txtTurnoJ2.Text" xml:space="preserve">
+    <value>Player 2 turn. Choose an action.</value>
+  </data>
+  <data name="txtVic1.Text" xml:space="preserve">
+    <value>Player 1.
+You won the battle.</value>
+  </data>
+  <data name="txtVic2.Text" xml:space="preserve">
+    <value>Player 2.
+You won the battle.</value>
   </data>
 </root>

@@ -68,5 +68,9 @@ namespace MiPokemon
             }
         }
 
+        private void btnVolver_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(CombatePage));
+        }
     }
 }

@@ -49,7 +49,7 @@
                     <Button x:Name="btnInicio" x:Uid="btnInicio" Grid.Row="0" Grid.Column="1" Content="Inicio" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnInicio_Click"/>
                     <Button x:Name="btnPokedex" Grid.Row="1" Grid.Column="1" Content="Pokedex" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnPokedex_Click"/>
                     <Button x:Name="btnCombatePokemon" x:Uid="btnCombatePokemon" Grid.Row="2" Grid.Column="1" Content="Combate Pokemon" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" Click="btnCombatePokemon_Click"/>
-                    <Button x:Name="btnAcercaDe" x:Uid="btnAcercaDe" Grid.Row="3" Grid.Column="1" Content="Acerca de" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" HorizontalContentAlignment="Center"/>
+                    <Button x:Name="btnAcercaDe" x:Uid="btnAcercaDe" Grid.Row="3" Grid.Column="1" Content="Acerca de" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontWeight="Bold" Margin="0,4,0,8" HorizontalContentAlignment="Center" Click="btnAcercaDe_Click"/>
 
                 </Grid>
 

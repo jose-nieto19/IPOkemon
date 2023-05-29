@@ -187,5 +187,11 @@ namespace MiPokemon
         {
             sView.IsPaneOpen = !sView.IsPaneOpen;
         }
+
+        private void btnAcercaDe_Click(object sender, RoutedEventArgs e)
+        {
+            fmMain.Navigate(typeof(AcercaDePage));
+            if (fmMain.BackStack.Any()) SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+        }
     }
 }

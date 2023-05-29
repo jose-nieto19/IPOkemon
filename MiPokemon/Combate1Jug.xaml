@@ -26,12 +26,12 @@
         <RelativePanel x:Name="venPokemon2" Grid.Column="1" Margin="30,30,30,30" Grid.Row="1" Grid.ColumnSpan="3"/>
         <Rectangle x:Name="rectPokemon2" Grid.Column="1" Margin="30,30,30,30" Stroke="#FF6C68FF" Grid.Row="1" Grid.ColumnSpan="3"/>
         <TextBlock x:Name="jugador1" HorizontalAlignment="Center" TextWrapping="Wrap" Text="JUGADOR 1" VerticalAlignment="Center" FontWeight="Bold" FontSize="15" Height="20" Width="84" FocusVisualPrimaryBrush="{x:Null}" Foreground="White"/>
-        <TextBlock x:Name="jugador2" Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="JUGADOR 2" VerticalAlignment="Center" FontSize="15" FontWeight="Bold" Margin="143,0,0,0" Height="18" Width="97" Foreground="White" Grid.ColumnSpan="2"/>
+        <TextBlock x:Name="jugador2" Grid.Column="2" HorizontalAlignment="Center" TextWrapping="Wrap" Text="JUGADOR 2" VerticalAlignment="Center" FontSize="15" FontWeight="Bold"  Height="18" Width="97" Foreground="White"/>
         <Rectangle x:Name="Turno" Margin="15,7,1,15" Grid.Row="2" Stroke="Black" Fill="White"/>
-        <TextBlock x:Name="Maquina" Margin="45,35,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Turno de la máquina. Seleccionando movimiento..." Foreground="Black" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Visibility="Collapsed"/>
-        <Button x:Name="Ataque" Grid.Column="1" Content="Ataque" Margin="35,27,40,30" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24" Click="AtaquePokemonAsync"/>
-        <Button x:Name="Curar" Grid.Column="2" Content="Curar" Margin="30,25,43,29" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24" Click="CurarPokemon"/>
-        <TextBlock x:Name="Jugador1" HorizontalAlignment="Left" Margin="45,35,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Jugador 1. Elija un movimiento." VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold"/>
-        <Button x:Name="Energia" Grid.Column="3" Content="Energía" Margin="30,25,43,29" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24" Click="DarEnergiaPokemon"/>
+        <TextBlock x:Name="Maquina" x:Uid="txtMaquina" Margin="45,35,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Turno de la máquina. Seleccionando movimiento..." Foreground="Black" FontSize="20" FontWeight="Bold" HorizontalAlignment="Left" Visibility="Collapsed"/>
+        <Button x:Name="Ataque" x:Uid="btnAtaque" Grid.Column="1" Content="Ataque" Margin="35,27,40,30" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24" Click="AtaquePokemonAsync"/>
+        <Button x:Name="Curar" x:Uid="btnCurar"  Grid.Column="2" Content="Curar" Margin="30,25,43,29" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24" Click="CurarPokemon"/>
+        <TextBlock x:Name="Jugador1" x:Uid="txtTurnoJ1" HorizontalAlignment="Left" Margin="45,35,0,0" Grid.Row="2" TextWrapping="Wrap" Text="Jugador 1. Elija un movimiento." VerticalAlignment="Top" Foreground="Black" FontSize="20" FontWeight="Bold"/>
+        <Button x:Name="Energia" x:Uid="btnEnergy" Grid.Column="3" Content="Energía" Margin="30,25,43,29" Grid.Row="2" VerticalAlignment="Stretch" HorizontalAlignment="Stretch" Background="White" Foreground="Black" BorderBrush="#FFFFE0E0" FontSize="24" Click="DarEnergiaPokemon"/>
     </Grid>
 </Page>

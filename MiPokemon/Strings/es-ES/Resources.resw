@@ -126,11 +126,30 @@
   <data name="btnAcercaDe.Content" xml:space="preserve">
     <value>Acerca de</value>
   </data>
+  <data name="btnAtaque.Content" xml:space="preserve">
+    <value>Ataque</value>
+  </data>
   <data name="btnCombatePokemon.Content" xml:space="preserve">
     <value>Combate Pokemon</value>
   </data>
+  <data name="btnCurar.Content" xml:space="preserve">
+    <value>Curar</value>
+  </data>
+  <data name="btnEnergia.Content" xml:space="preserve">
+    <value>Energía</value>
+  </data>
   <data name="btnInicio.Content" xml:space="preserve">
     <value>Inicio</value>
+  </data>
+  <data name="btnVolver.Content" xml:space="preserve">
+    <value>Volver a combate</value>
+  </data>
+  <data name="txtAcercaDe.Text" xml:space="preserve">
+    <value>En este trabajo se ha implementado la opción del combate Pokemon. Su funcionamiento es el siguiente:
+Primero se selecciona el número de jugadores (1 o 2) y, tras esto, los Pokemon que usaran dichos jugadores. Una vez todo listo, comieza el combate Pokemon y finaliza cuando uno de los dos se queda sin vida, cargando así una página de victoria.
+
+Una consideración adicional:
+Para poder ver la información de los Pokemon en la Pokedex, se debe hacer click encima de ellos.</value>
   </data>
   <data name="txtCategoriaC2.Text" xml:space="preserve">
     <value>Lagartija</value>
@@ -184,6 +203,15 @@ Trabajo realizado por:
 - Raúl Moya Campillos
 - José Luis Nieto García-Carpintero</value>
   </data>
+  <data name="txtJ1.Text" xml:space="preserve">
+    <value>JUGADOR 1</value>
+  </data>
+  <data name="txtJ2.Text" xml:space="preserve">
+    <value>JUGADOR 2</value>
+  </data>
+  <data name="txtMaquina.Text" xml:space="preserve">
+    <value>Turno de la maquina. Seleccionando movimiento...</value>
+  </data>
   <data name="txtNombreP.Text" xml:space="preserve">
     <value>Nombre:</value>
   </data>
@@ -201,5 +229,19 @@ Trabajo realizado por:
   </data>
   <data name="txtTipoP.Text" xml:space="preserve">
     <value>Tipo:</value>
+  </data>
+  <data name="txtTurnoJ1.Text" xml:space="preserve">
+    <value>Turno Jugador 1. Elija un movimiento.</value>
+  </data>
+  <data name="txtTurnoJ2.Text" xml:space="preserve">
+    <value>Turno Jugador 2. Elija un movimiento.</value>
+  </data>
+  <data name="txtVic1.Text" xml:space="preserve">
+    <value>Jugador 1.
+Has ganado el combate.</value>
+  </data>
+  <data name="txtVic2.Text" xml:space="preserve">
+    <value>Jugador 2.
+Has ganado el combate.</value>
   </data>
 </root>
