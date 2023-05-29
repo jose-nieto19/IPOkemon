@@ -49,7 +49,6 @@ namespace MiPokemon
         public Combate2Jug()
         {
             this.InitializeComponent();
-
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -59,6 +58,7 @@ namespace MiPokemon
             pokemon2 = padre.pokemonJ2;
             this.CargarPokemons(pokemon1, pokemon2);
         }
+
 
         public void CargarPokemons(String pokemon1, String pokemon2)
         {

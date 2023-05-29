@@ -8,23 +8,23 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid x:Name="Grid_Porygon" HorizontalAlignment="Center" VerticalAlignment="Center">
-        <Image x:Name="fondo_porygon" Source="Assets/fondo_info_porygon.png" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.65" Stretch="Fill" Margin="0,-1,0,0"/>
-        <TextBlock x:Name="tbNombrePokemon" Margin="180,70,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Nombre:"/>
-        <TextBlock x:Name="tbCategoriaPokemon" Margin="168,150,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Categoría:"/>
-        <TextBlock x:Name="tbTipoPokemon" Margin="227,230,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Tipo:"/>
-        <TextBlock x:Name="tbRarezaPokemon" Margin="201,310,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Rareza:"/>
-        <TextBlock x:Name="tbDescripcionPokemon" Margin="144,540,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Descripción:"/>
-        <TextBlock x:Name="tbEvolucionPokemon" Margin="165,620,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"><Run Text="Evolucion"/><Run Text=":"/></TextBlock>
-        <TextBlock x:Name="tbGeneracionPokemon" Margin="147,390,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"><Run Text="Generaci"/><Run Text="ón:"/></TextBlock>
-        <TextBlock x:Name="tbHabilidadPokemon" Margin="166,470,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Habilidad:"/>
-        <TextBlock x:Name="tbNombrePokemon2" Margin="300,70,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Porygon2" RenderTransformOrigin="0.476,0.442"/>
+    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+        <Image x:Name="fondo_porygon" Source="Assets/fondo_info_porygon.png" HorizontalAlignment="Center" VerticalAlignment="Center" Opacity="0.65" Stretch="Fill"/>
+        <TextBlock x:Name="tbNombrePokemon" x:Uid="txtNombreP" Margin="180,70,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Nombre:"/>
+        <TextBlock x:Name="tbCategoriaPokemon" x:Uid="txtCategoriaP" Margin="168,150,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Categoría:"/>
+        <TextBlock x:Name="tbTipoPokemon" x:Uid="txtTipoP" Margin="227,230,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Tipo:"/>
+        <TextBlock x:Name="tbRarezaPokemon" x:Uid="txtRarezaP" Margin="201,310,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Rareza:"/>
+        <TextBlock x:Name="tbDescripcionPokemon" x:Uid="txtDescripcionP" Margin="144,540,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Descripción:"/>
+        <TextBlock x:Name="tbEvolucionPokemon" x:Uid="txtEvolucionP" Margin="165,620,0,0" Text="Evolución:" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"/>
+        <TextBlock x:Name="tbGeneracionPokemon" x:Uid="txtGeneracionP" Margin="147,390,0,0" Text="Generación:" TextWrapping="Wrap" FontWeight="Bold" FontSize="25"/>
+        <TextBlock x:Name="tbHabilidadPokemon" x:Uid="txtHabilidadP" Margin="166,470,0,0" TextWrapping="Wrap" FontWeight="Bold" FontSize="25" Text="Habilidad:"/>
+        <TextBlock x:Name="tbNombrePokemon2" Margin="300,70,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Porygon2"/>
         <TextBlock x:Name="tbCategoriaPokemon2" Margin="301,150,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Virtual"/>
-        <TextBlock x:Name="tbRarezaPokemon2" Margin="299,310,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Infrecuente"/>
-        <TextBlock x:Name="tbGeneracionPokemon2" Margin="297,390,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Segunda"/>
-        <TextBlock x:Name="tbHabilidadPokemon2" Margin="300,470,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Cálculo Final"/>
+        <TextBlock x:Name="tbRarezaPokemon2" x:Uid="txtRarezaP2" Margin="299,310,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Infrecuente"/>
+        <TextBlock x:Name="tbGeneracionPokemon2" x:Uid="txtGeneracionP2" Margin="297,390,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Segunda"/>
+        <TextBlock x:Name="tbHabilidadPokemon2" x:Uid="txtHabilidadP2" Margin="300,470,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Cálculo Final"/>
         <TextBlock x:Name="tbTipoPokemon2" Margin="301,230,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Normal"/>
-        <TextBlock x:Name="tbEvolucionPokemon2" Margin="300,620,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Porygon-Z" RenderTransformOrigin="0.476,0.442"/>
-        <TextBlock x:Name="tbDescripcionPokemon2" Margin="300,540,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Versión avanzada de Porygon" RenderTransformOrigin="0.476,0.442"/>
+        <TextBlock x:Name="tbEvolucionPokemon2" Margin="300,620,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Porygon-Z"/>
+        <TextBlock x:Name="tbDescripcionPokemon2" x:Uid="txtDescripcionP2" Margin="300,540,0,0" TextWrapping="Wrap" FontWeight="Normal" FontSize="25" Text="Versión avanzada de Porygon"/>
     </Grid>
 </Page>
