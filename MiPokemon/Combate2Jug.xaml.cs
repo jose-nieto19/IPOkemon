@@ -28,8 +28,8 @@ namespace MiPokemon
         private UserControl pokemonIzq = null;
         private UserControl pokemonDer = null;
 
-        String pokemon1;
-        String pokemon2;
+        string pokemon1;
+        string pokemon2;
         int botonAtaque=1;
 
         Pokemon_Charmander charmander = new Pokemon_Charmander();
@@ -42,8 +42,16 @@ namespace MiPokemon
         {
             this.InitializeComponent();
             CargarPokemons("Charmander","Porygon");
+            Jugador1.Text = pokemon1;
+
            
         }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            pokemon1 = (string)e.Parameter;
+        }
+
 
         public void CargarPokemons(String pokemon1, String pokemon2)
         {

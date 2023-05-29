@@ -14,6 +14,8 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 using Windows.UI.ViewManagement;
+using Windows.UI.Notifications;
+using Microsoft.Toolkit.Uwp.Notifications;
 
 // La plantilla de elemento Página en blanco está documentada en https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0xc0a
 
@@ -26,6 +28,86 @@ namespace MiPokemon
     {
         public MainPage()
         {
+            TileContent content = new TileContent()
+            {
+                Visual = new TileVisual()
+                {
+                    TileMedium = new TileBinding()
+                    {
+                        Content = new TileBindingContentAdaptive()
+                        {
+                            Children =
+                            {
+                                new AdaptiveText()
+                                {
+                                    Text = "IPOkemon",
+                                    HintStyle = AdaptiveTextStyle.Subtitle
+                                },
+
+                                new AdaptiveText()
+                                {
+                                    Text = "Un proyecto de IPO2",
+                                    HintStyle = AdaptiveTextStyle.CaptionSubtle
+                                },
+                            }
+                        }
+                    },
+
+                    TileWide = new TileBinding()
+                    {
+                        Branding = TileBranding.NameAndLogo,
+                        DisplayName = "Version 1.0",
+                        Content = new TileBindingContentAdaptive()
+                        {
+                            Children = {
+                                new AdaptiveText()
+                                {
+                                    Text = "IPOkemon",
+                                    HintStyle = AdaptiveTextStyle.Subtitle
+                                },
+                                new AdaptiveText()
+                                {
+                                    Text = "Un Proyecto de IPO2",
+                                    HintStyle = AdaptiveTextStyle.CaptionSubtle
+                                },
+                                new AdaptiveText()
+                                {
+                                    Text = "Una aplicación sobre Pokemon hecha con tecnología UWP",
+                                    HintWrap = true,
+                                }
+                            }
+                        }
+                    },
+
+                    TileLarge = new TileBinding()
+                    {
+                        Content = new TileBindingContentAdaptive()
+                        {
+                            Children = {
+                                new AdaptiveText()
+                                {
+                                    Text = "IPOkemon",
+                                    HintStyle = AdaptiveTextStyle.Subtitle
+                                },
+                                new AdaptiveText()
+                                {
+                                    Text = "Un Proyecto de IPO2",
+                                    HintStyle = AdaptiveTextStyle.CaptionSubtle
+                                },
+                                new AdaptiveText()
+                                {
+                                    Text = "Una aplicación sobre Pokemon hecha con tecnología UWP",
+                                    HintStyle = AdaptiveTextStyle.CaptionSubtle
+                                }
+                            }
+                        }
+                    },
+                }
+            };
+            var notification = new TileNotification(content.GetXml());
+            notification.ExpirationTime = DateTimeOffset.UtcNow.AddSeconds(30);
+            var updater = TileUpdateManager.CreateTileUpdaterForApplication();
+            updater.Update(notification);
             this.InitializeComponent();
             SystemNavigationManager.GetForCurrentView().BackRequested += opcionVolver;
 

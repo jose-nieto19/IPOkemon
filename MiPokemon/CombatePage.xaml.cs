@@ -27,11 +27,11 @@ namespace MiPokemon
         public CombatePage()
         {
             this.InitializeComponent();
-            ApplicationView.GetForCurrentView().VisibleBoundsChanged += Comb2Jug_VisibleBoundsChanged;
+            ApplicationView.GetForCurrentView().VisibleBoundsChanged += CombatePage_VisibleBoundsChanged;
 
         }
 
-        private void Comb2Jug_VisibleBoundsChanged(ApplicationView sender, object args)
+        private void CombatePage_VisibleBoundsChanged(ApplicationView sender, object args)
         {
             var Width = ApplicationView.GetForCurrentView().VisibleBounds.Width;
             if(Width >= 900)
