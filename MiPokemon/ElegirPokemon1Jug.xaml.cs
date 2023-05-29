@@ -20,48 +20,29 @@ namespace MiPokemon
     /// <summary>
     /// Una página vacía que se puede usar de forma independiente o a la que se puede navegar dentro de un objeto Frame.
     /// </summary>
-    public sealed partial class ElegirPokemon2Jug : Page
+    public sealed partial class ElegirPokemon1Jug : Page
     {
-        int numElecciones;
         public string pokemonJ1;
         public string pokemonJ2;
-        public ElegirPokemon2Jug()
+        public ElegirPokemon1Jug()
         {
             this.InitializeComponent();
-            numElecciones = 0;
         }
-
         private void btnPorygon_Click(object sender, RoutedEventArgs e)
         {
-            txtEleccionJ1.Visibility = Visibility.Collapsed;
-            txtEleccionJ2.Visibility = Visibility.Visible;
-            if(numElecciones == 0)
-            {
-                pokemonJ1 = "Porygon2";
-                numElecciones++;
-            }
-            else if (numElecciones == 1)
-            {
-                pokemonJ2 = "Porygon2";
-                Frame.Navigate(typeof(Combate2Jug),pokemonJ1);
-            }
-
+            pokemonJ1 = "Porygon2";
+            pokemonJ2 = "Charmander";
+            Frame.Navigate(typeof(Combate1Jug), this);
         }
 
+       
         private void btnCharmander_Click(object sender, RoutedEventArgs e)
         {
-            txtEleccionJ1.Visibility = Visibility.Collapsed;
-            txtEleccionJ2.Visibility = Visibility.Visible;
-            if (numElecciones == 0)
-            {
-                pokemonJ1 = "Charmander";
-                numElecciones++;
-            }
-            else if (numElecciones == 1)
-            {
-                pokemonJ2 = "Charmander";
-                Frame.Navigate(typeof(Combate2Jug),pokemonJ1);
-            }
+            
+            pokemonJ1 = "Charmander";
+            pokemonJ2 = "Porygon2";
+            Frame.Navigate(typeof(Combate1Jug), this);
         }
     }
+    
 }

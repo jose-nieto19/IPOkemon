@@ -23,7 +23,7 @@
         <Image x:Name="imLogo" Grid.ColumnSpan="3" Source="/Assets/logo.png" Visibility="Collapsed" Grid.RowSpan="3"/>
         <TextBox x:Name="txtComb" x:Uid="txtComb" TextWrapping="Wrap" Text="Combate Pokemon&#xD;&#xA;Selecciona un modo de juego" HorizontalTextAlignment="Center" TextAlignment="Center" FontSize="50" FontWeight="Bold" IsReadOnly="True" IsDoubleTapEnabled="False" IsHoldingEnabled="False" IsRightTapEnabled="False" IsTapEnabled="False" AllowFocusOnInteraction="False" VerticalAlignment="Top" Margin="60,50,60,0" Height="239" Grid.ColumnSpan="3"/>
         <RelativePanel Grid.Column="1" Grid.Row="1" >
-            <Button x:Name ="btn1jug" x:Uid="btn1jug" Content="1 JUGADOR" Height="70" Width="157"  RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="22"  Background="White" FontWeight="Bold"/>
+            <Button x:Name ="btn1jug" x:Uid="btn1jug" Content="1 JUGADOR" Height="70" Width="157"  RelativePanel.AlignVerticalCenterWithPanel="True" FontSize="22"  Background="White" FontWeight="Bold" Click="btn1jug_Click"/>
             <Button x:Name ="btn2jug" x:Uid="btn2jug" Content="2 JUGADORES" Height="70" Width="157"  RelativePanel.AlignVerticalCenterWithPanel="True" RelativePanel.AlignRightWithPanel="True" FontSize="20" Background="White" FontWeight="Bold" Click="btn2jug_Click"/>
         </RelativePanel>
     </Grid>

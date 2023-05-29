@@ -107,7 +107,25 @@ namespace porygon2UC
 
         public void usePotionRed(object sender, PointerRoutedEventArgs e)
         {
-            if (pbHealth.Value != 100)
+            if (pbHealth.Value <= 75)
+            {
+                dtTimeHealth = new DispatcherTimer();
+                dtTimeHealth.Interval = TimeSpan.FromMilliseconds(100);
+                dtTimeHealth.Tick += increaseHealth;
+                if (this.imRPotion.Opacity != 0.5)
+                {
+                    dtTimeHealth.Start();
+                    this.imRPotion.Opacity = 0.5;
+                    this.imYPotion.Opacity = 0.5;
+                    this.btnPsicoataque.IsEnabled = false;
+                    this.btnRecibirAtaque.IsEnabled = false;
+                }
+            }
+        }
+
+        public void CurarPokemon()
+        {
+            if (pbHealth.Value <= 75)
             {
                 dtTimeHealth = new DispatcherTimer();
                 dtTimeHealth.Interval = TimeSpan.FromMilliseconds(100);
@@ -125,7 +143,7 @@ namespace porygon2UC
 
         public void usePotionYellow(object sender, PointerRoutedEventArgs e)
         {
-            if (pbEnergy.Value != 100)
+            if (pbEnergy.Value <= 100)
             {
                 dtTimeEnergy = new DispatcherTimer();
                 dtTimeEnergy.Interval = TimeSpan.FromMilliseconds(100);
@@ -141,10 +159,28 @@ namespace porygon2UC
             }
         }
 
-        public void increaseHealth(object sender, object e)
+        public void DarEnergia()
         {
-            this.pbHealth.Value += 0.5;
-            if (pbHealth.Value >= 100)
+            if (pbEnergy.Value <= 100)
+            {
+                dtTimeEnergy = new DispatcherTimer();
+                dtTimeEnergy.Interval = TimeSpan.FromMilliseconds(100);
+                dtTimeEnergy.Tick += increaseEnergy;
+                if (this.imYPotion.Opacity != 0.5)
+                {
+                    dtTimeEnergy.Start();
+                    this.imRPotion.Opacity = 0.5;
+                    this.imYPotion.Opacity = 0.5;
+                    this.btnPsicoataque.IsEnabled = false;
+                    this.btnRecibirAtaque.IsEnabled = false;
+                }
+            }
+        }
+
+            public void increaseHealth(object sender, object e)
+        {
+            this.pbHealth.Value += 2.5;
+            if (pbHealth.Value >= 75)
             {
                 cvTiritasPecho.Visibility = Visibility.Collapsed;
                 cvVendaCola.Visibility = Visibility.Collapsed;
@@ -161,7 +197,7 @@ namespace porygon2UC
         public void increaseEnergy(object sender, object e)
         {
             Storyboard sb = (Storyboard)this.Resources["sbFlotar"];
-            this.pbEnergy.Value += 0.5;
+            this.pbEnergy.Value += 2.5;
             if (pbEnergy.Value >= 100)
             {
                 sudor.Visibility = Visibility.Collapsed;

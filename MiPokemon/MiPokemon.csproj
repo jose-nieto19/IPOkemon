@@ -122,11 +122,17 @@
     <Compile Include="CharmanderInfo.xaml.cs">
       <DependentUpon>CharmanderInfo.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Combate1Jug.xaml.cs">
+      <DependentUpon>Combate1Jug.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Combate2Jug.xaml.cs">
       <DependentUpon>Combate2Jug.xaml</DependentUpon>
     </Compile>
     <Compile Include="CombatePage.xaml.cs">
       <DependentUpon>CombatePage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ElegirPokemon1Jug.xaml.cs">
+      <DependentUpon>ElegirPokemon1Jug.xaml</DependentUpon>
     </Compile>
     <Compile Include="ElegirPokemon2Jug.xaml.cs">
       <DependentUpon>ElegirPokemon2Jug.xaml</DependentUpon>
@@ -150,6 +156,12 @@
     <Compile Include="ucPorygon2.xaml.cs">
       <DependentUpon>ucPorygon2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VictoriaCombate.xaml.cs">
+      <DependentUpon>VictoriaCombate.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="VictoriaCombate2Jug.xaml.cs">
+      <DependentUpon>VictoriaCombate2Jug.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <AppxManifest Include="Package.appxmanifest">
@@ -161,6 +173,7 @@
     <Content Include="Assets\combate.jpg" />
     <Content Include="Assets\evolucion_porygon.png" />
     <Content Include="Assets\fondo_info_porygon.png" />
+    <Content Include="Assets\fondo_victoria.jpg" />
     <Content Include="Assets\icono_pokedex.png" />
     <Content Include="Assets\InfoCharmander.jpg" />
     <Content Include="Assets\LargeTile.scale-100.png" />
@@ -219,6 +232,7 @@
     <Content Include="Assets\StoreLogo.scale-200.png" />
     <Content Include="Assets\StoreLogo.scale-400.png" />
     <Content Include="Assets\tirita.png" />
+    <Content Include="Assets\victoria.png" />
     <Content Include="Assets\Vida.png" />
     <Content Include="Assets\Wide310x150Logo.scale-100.png" />
     <Content Include="Assets\Wide310x150Logo.scale-125.png" />
@@ -241,11 +255,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Combate1Jug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Combate2Jug.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="CombatePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ElegirPokemon1Jug.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -276,6 +298,14 @@
     <Page Include="ucPorygon2.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
+    </Page>
+    <Page Include="VictoriaCombate.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VictoriaCombate2Jug.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>

@@ -69,5 +69,11 @@ namespace MiPokemon
             Frame.Navigate(typeof(ElegirPokemon2Jug));
             SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
         }
+
+        private void btn1jug_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(ElegirPokemon1Jug));
+            SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility = AppViewBackButtonVisibility.Visible;
+        }
     }
 }
